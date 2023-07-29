@@ -1,0 +1,2507 @@
+apps/blecent/src/misc.c:106:10: style: The scope of the variable 's' can be reduced. [variableScope]
+    char s[BLE_HS_ADV_MAX_SZ];
+         ^
+apps/blecent/src/misc.c:107:20: style: The scope of the variable 'u8p' can be reduced. [variableScope]
+    const uint8_t *u8p;
+                   ^
+apps/blecent/src/peer.c:36:19: error: syntax error [syntaxError]
+static SLIST_HEAD(, peer) peers;
+                  ^
+apps/blecsc/src/main.c:152:14: style: The scope of the variable 'wheel_rev_period' can be reduced. [variableScope]
+    uint16_t wheel_rev_period;
+             ^
+apps/blecsc/src/main.c:153:14: style: The scope of the variable 'crank_rev_period' can be reduced. [variableScope]
+    uint16_t crank_rev_period;
+             ^
+apps/blehr/src/gatt_svr.c:91:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blemesh_models_example_1/src/main.c:579:0: error: Syntax error in #if [preprocessorErrorDirective]
+#if 1
+^
+apps/blemesh_models_example_1/src/main.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+apps/blemesh_models_example_2/src/device_composition.c:1393:6: style: The scope of the variable 'rc' can be reduced. [variableScope]
+ int rc;
+     ^
+apps/blemesh_models_example_2/src/device_composition.c:1583:6: style: The scope of the variable 'rc' can be reduced. [variableScope]
+ int rc;
+     ^
+apps/blemesh_models_example_2/src/device_composition.c:1837:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blemesh_models_example_2/src/device_composition.c:1728:11: style: Local variable 'lightness' shadows outer variable [shadowVariable]
+ uint16_t lightness;
+          ^
+apps/blemesh_models_example_2/src/state_binding.h:46:17: note: Shadowed declaration
+extern uint16_t lightness, target_lightness;
+                ^
+apps/blemesh_models_example_2/src/device_composition.c:1728:11: note: Shadow variable
+ uint16_t lightness;
+          ^
+apps/blemesh_models_example_2/src/device_composition.c:1976:11: style: Local variable 'lightness' shadows outer variable [shadowVariable]
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/state_binding.h:46:17: note: Shadowed declaration
+extern uint16_t lightness, target_lightness;
+                ^
+apps/blemesh_models_example_2/src/device_composition.c:1976:11: note: Shadow variable
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/device_composition.c:2060:11: style: Local variable 'lightness' shadows outer variable [shadowVariable]
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/state_binding.h:46:17: note: Shadowed declaration
+extern uint16_t lightness, target_lightness;
+                ^
+apps/blemesh_models_example_2/src/device_composition.c:2060:11: note: Shadow variable
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/device_composition.c:2215:11: style: Local variable 'lightness' shadows outer variable [shadowVariable]
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/state_binding.h:46:17: note: Shadowed declaration
+extern uint16_t lightness, target_lightness;
+                ^
+apps/blemesh_models_example_2/src/device_composition.c:2215:11: note: Shadow variable
+ uint16_t lightness, temp;
+          ^
+apps/blemesh_models_example_2/src/main.c:67:11: style: Local variable 'lightness' shadows outer variable [shadowVariable]
+ uint16_t lightness;
+          ^
+apps/blemesh_models_example_2/src/state_binding.h:46:17: note: Shadowed declaration
+extern uint16_t lightness, target_lightness;
+                ^
+apps/blemesh_models_example_2/src/main.c:67:11: note: Shadow variable
+ uint16_t lightness;
+          ^
+apps/blemesh_models_example_2/src/main.c:62:30: error: Signed integer overflow for expression '0xFFFF<<16'. [integerOverflow]
+  (uint32_t) ((LIGHTNESS_MAX << 16) | TEMP_MIN);
+                             ^
+apps/blemesh_models_example_2/src/state_binding.c:136:28: style:inconclusive: Function 'state_binding' argument 1 names different: declaration 'lightness' definition 'light'. [funcArgNamesDifferent]
+void state_binding(uint8_t light, uint8_t temp)
+                           ^
+apps/blemesh_models_example_2/src/state_binding.h:49:28: note: Function 'state_binding' argument 1 names different: declaration 'lightness' definition 'light'.
+void state_binding(uint8_t lightness, uint8_t temperature);
+                           ^
+apps/blemesh_models_example_2/src/state_binding.c:136:28: note: Function 'state_binding' argument 1 names different: declaration 'lightness' definition 'light'.
+void state_binding(uint8_t light, uint8_t temp)
+                           ^
+apps/blemesh_models_example_2/src/state_binding.c:136:43: style:inconclusive: Function 'state_binding' argument 2 names different: declaration 'temperature' definition 'temp'. [funcArgNamesDifferent]
+void state_binding(uint8_t light, uint8_t temp)
+                                          ^
+apps/blemesh_models_example_2/src/state_binding.h:49:47: note: Function 'state_binding' argument 2 names different: declaration 'temperature' definition 'temp'.
+void state_binding(uint8_t lightness, uint8_t temperature);
+                                              ^
+apps/blemesh_models_example_2/src/state_binding.c:136:43: note: Function 'state_binding' argument 2 names different: declaration 'temperature' definition 'temp'.
+void state_binding(uint8_t light, uint8_t temp)
+                                          ^
+apps/blemesh_models_example_2/src/transition.c:53:10: style: The scope of the variable 'steps' can be reduced. [variableScope]
+ uint8_t steps, resolution;
+         ^
+apps/blemesh_models_example_2/src/transition.c:53:17: style: The scope of the variable 'resolution' can be reduced. [variableScope]
+ uint8_t steps, resolution;
+                ^
+apps/blemesh_models_example_2/src/transition.c:54:10: style: The scope of the variable 'duration_remainder' can be reduced. [variableScope]
+ int32_t duration_remainder;
+         ^
+apps/blemesh_models_example_2/src/transition.c:55:10: style: The scope of the variable 'now' can be reduced. [variableScope]
+ int64_t now;
+         ^
+apps/blestress/src/misc.c:121:10: style: The scope of the variable 's' can be reduced. [variableScope]
+    char s[BLE_HS_ADV_MAX_SZ];
+         ^
+apps/blestress/src/misc.c:122:20: style: The scope of the variable 'u8p' can be reduced. [variableScope]
+    const uint8_t *u8p;
+                   ^
+apps/blestress/src/rx_stress.c:315:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/rx_stress.c:490:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/rx_stress.c:1096:9: style: The scope of the variable 'bytes_num' can be reduced. [variableScope]
+    int bytes_num = 10000;
+        ^
+apps/blestress/src/rx_stress.c:1097:28: style: The scope of the variable 'om' can be reduced. [variableScope]
+    static struct os_mbuf *om = NULL;
+                           ^
+apps/blestress/src/rx_stress.c:1098:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/stress.c:164:21: style: The scope of the variable 'sdu_rx' can be reduced. [variableScope]
+    struct os_mbuf *sdu_rx;
+                    ^
+apps/blestress/src/stress.c:165:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/stress.c:253:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/stress.c:300:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:254:9: style: The scope of the variable 'delay_time' can be reduced. [variableScope]
+    int delay_time;
+        ^
+apps/blestress/src/tx_stress.c:333:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:378:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:457:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:723:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:938:12: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int i, rc;
+           ^
+apps/blestress/src/tx_stress.c:1116:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:1117:21: style: The scope of the variable 'sdu_rx' can be reduced. [variableScope]
+    struct os_mbuf *sdu_rx;
+                    ^
+apps/blestress/src/tx_stress.c:1287:21: style: The scope of the variable 'om' can be reduced. [variableScope]
+    struct os_mbuf *om;
+                    ^
+apps/blestress/src/tx_stress.c:1289:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/blestress/src/tx_stress.c:1483:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/btshell/src/cmd.c:1636:9: style: Variable 'tmp' is reassigned a value before the old one has been used. [redundantAssignment]
+    tmp = parse_arg_bool_dflt("uuids32_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1610:9: note: tmp is assigned
+    tmp = parse_arg_bool_dflt("uuids16_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1636:9: note: tmp is overwritten
+    tmp = parse_arg_bool_dflt("uuids32_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1663:9: style: Variable 'tmp' is reassigned a value before the old one has been used. [redundantAssignment]
+    tmp = parse_arg_bool_dflt("uuids128_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1636:9: note: tmp is assigned
+    tmp = parse_arg_bool_dflt("uuids32_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1663:9: note: tmp is overwritten
+    tmp = parse_arg_bool_dflt("uuids128_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1674:9: style: Variable 'tmp' is reassigned a value before the old one has been used. [redundantAssignment]
+    tmp = parse_arg_long_bounds("tx_power_level", INT8_MIN, INT8_MAX, &rc);
+        ^
+apps/btshell/src/cmd.c:1663:9: note: tmp is assigned
+    tmp = parse_arg_bool_dflt("uuids128_is_complete", 0, &rc);
+        ^
+apps/btshell/src/cmd.c:1674:9: note: tmp is overwritten
+    tmp = parse_arg_long_bounds("tx_power_level", INT8_MIN, INT8_MAX, &rc);
+        ^
+apps/btshell/src/cmd.c:1047:26: style: The scope of the variable 'conn' can be reduced. [variableScope]
+    struct btshell_conn *conn;
+                         ^
+apps/btshell/src/cmd.c:1048:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+apps/btshell/src/cmd.c:2812:14: style: The scope of the variable 'rand_val' can be reduced. [variableScope]
+    uint64_t rand_val;
+             ^
+apps/btshell/src/cmd.c:2813:13: style: The scope of the variable 'ltk' can be reduced. [variableScope]
+    uint8_t ltk[16];
+            ^
+apps/btshell/src/cmd.c:2814:13: style: The scope of the variable 'key_size' can be reduced. [variableScope]
+    uint8_t key_size;
+            ^
+apps/btshell/src/cmd.c:2816:9: style: The scope of the variable 'auth' can be reduced. [variableScope]
+    int auth;
+        ^
+apps/btshell/src/main.c:2537:12: style: Variable 'i' is reassigned a value before the old one has been used. [redundantAssignment]
+    for (i = 0; i < bytes / sizeof(b); i++) {
+           ^
+apps/btshell/src/main.c:2515:10: note: i is assigned
+        i++;
+         ^
+apps/btshell/src/main.c:2537:12: note: i is overwritten
+    for (i = 0; i < bytes / sizeof(b); i++) {
+           ^
+apps/btshell/src/main.c:1967:5: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+    int rc;
+    ^
+apps/btshell/src/main.c:1980:5: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+    int rc;
+    ^
+apps/btshell/src/main.c:1993:5: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+    int rc;
+    ^
+apps/btshell/src/main.c:2011:5: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+    struct ble_store_value_sec value_sec;
+    ^
+apps/btshell/src/main.c:168:20: style: The scope of the variable 'u8p' can be reduced. [variableScope]
+    const uint8_t *u8p;
+                   ^
+apps/btshell/src/main.c:1469:13: style: The scope of the variable 'timeout' can be reduced. [variableScope]
+    int32_t timeout;
+            ^
+apps/btshell/src/main.c:2381:32: style:inconclusive: Function 'btshell_l2cap_connect' argument 1 names different: declaration 'conn' definition 'conn_handle'. [funcArgNamesDifferent]
+btshell_l2cap_connect(uint16_t conn_handle, uint16_t psm, uint16_t mtu, uint8_t num)
+                               ^
+apps/btshell/src/btshell.h:179:36: note: Function 'btshell_l2cap_connect' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+int btshell_l2cap_connect(uint16_t conn, uint16_t psm, uint16_t mtu, uint8_t num);
+                                   ^
+apps/btshell/src/main.c:2381:32: note: Function 'btshell_l2cap_connect' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+btshell_l2cap_connect(uint16_t conn_handle, uint16_t psm, uint16_t mtu, uint8_t num)
+                               ^
+apps/btshell/src/main.c:2414:35: style:inconclusive: Function 'btshell_l2cap_disconnect' argument 1 names different: declaration 'conn' definition 'conn_handle'. [funcArgNamesDifferent]
+btshell_l2cap_disconnect(uint16_t conn_handle, uint16_t idx)
+                                  ^
+apps/btshell/src/btshell.h:180:39: note: Function 'btshell_l2cap_disconnect' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+int btshell_l2cap_disconnect(uint16_t conn, uint16_t idx);
+                                      ^
+apps/btshell/src/main.c:2414:35: note: Function 'btshell_l2cap_disconnect' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+btshell_l2cap_disconnect(uint16_t conn_handle, uint16_t idx)
+                                  ^
+apps/btshell/src/main.c:2487:29: style:inconclusive: Function 'btshell_l2cap_send' argument 1 names different: declaration 'conn' definition 'conn_handle'. [funcArgNamesDifferent]
+btshell_l2cap_send(uint16_t conn_handle, uint16_t idx, uint16_t bytes)
+                            ^
+apps/btshell/src/btshell.h:181:33: note: Function 'btshell_l2cap_send' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+int btshell_l2cap_send(uint16_t conn, uint16_t idx, uint16_t bytes);
+                                ^
+apps/btshell/src/main.c:2487:29: note: Function 'btshell_l2cap_send' argument 1 names different: declaration 'conn' definition 'conn_handle'.
+btshell_l2cap_send(uint16_t conn_handle, uint16_t idx, uint16_t bytes)
+                            ^
+apps/btshell/src/parse.c:369:27: style: The scope of the variable 'kv' can be reduced. [variableScope]
+    const struct kv_pair *kv;
+                          ^
+apps/btshell/src/parse.c:427:19: style: The scope of the variable 'ul' can be reduced. [variableScope]
+    unsigned long ul;
+                  ^
+apps/btshell/src/parse.c:504:13: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+    uint8_t tmp;
+            ^
+apps/btshell/src/parse.c:684:11: style: The scope of the variable 'prefix' can be reduced. [variableScope]
+    char *prefix;
+          ^
+apps/btshell/src/parse.c:685:11: style: The scope of the variable 'suffix' can be reduced. [variableScope]
+    char *suffix;
+          ^
+apps/btshell/src/parse.c:689:9: style: The scope of the variable 'suffix_idx' can be reduced. [variableScope]
+    int suffix_idx;
+        ^
+apps/btshell/src/parse.c:187:33: style:inconclusive: Function 'parse_arg_long' argument 2 names different: declaration 'staus' definition 'out_status'. [funcArgNamesDifferent]
+parse_arg_long(char *name, int *out_status)
+                                ^
+apps/btshell/src/cmd.h:40:38: note: Function 'parse_arg_long' argument 2 names different: declaration 'staus' definition 'out_status'.
+long parse_arg_long(char *name, int *staus);
+                                     ^
+apps/btshell/src/parse.c:187:33: note: Function 'parse_arg_long' argument 2 names different: declaration 'staus' definition 'out_status'.
+parse_arg_long(char *name, int *out_status)
+                                ^
+apps/btshell/src/parse.c:193:33: style:inconclusive: Function 'parse_arg_bool' argument 2 names different: declaration 'status' definition 'out_status'. [funcArgNamesDifferent]
+parse_arg_bool(char *name, int *out_status)
+                                ^
+apps/btshell/src/cmd.h:41:41: note: Function 'parse_arg_bool' argument 2 names different: declaration 'status' definition 'out_status'.
+uint8_t parse_arg_bool(char *name, int *status);
+                                        ^
+apps/btshell/src/parse.c:193:33: note: Function 'parse_arg_bool' argument 2 names different: declaration 'status' definition 'out_status'.
+parse_arg_bool(char *name, int *out_status)
+                                ^
+apps/btshell/src/parse.c:205:34: style:inconclusive: Function 'parse_arg_uint8' argument 2 names different: declaration 'status' definition 'out_status'. [funcArgNamesDifferent]
+parse_arg_uint8(char *name, int *out_status)
+                                 ^
+apps/btshell/src/cmd.h:43:42: note: Function 'parse_arg_uint8' argument 2 names different: declaration 'status' definition 'out_status'.
+uint8_t parse_arg_uint8(char *name, int *status);
+                                         ^
+apps/btshell/src/parse.c:205:34: note: Function 'parse_arg_uint8' argument 2 names different: declaration 'status' definition 'out_status'.
+parse_arg_uint8(char *name, int *out_status)
+                                 ^
+apps/btshell/src/parse.c:211:35: style:inconclusive: Function 'parse_arg_uint16' argument 2 names different: declaration 'status' definition 'out_status'. [funcArgNamesDifferent]
+parse_arg_uint16(char *name, int *out_status)
+                                  ^
+apps/btshell/src/cmd.h:45:44: note: Function 'parse_arg_uint16' argument 2 names different: declaration 'status' definition 'out_status'.
+uint16_t parse_arg_uint16(char *name, int *status);
+                                           ^
+apps/btshell/src/parse.c:211:35: note: Function 'parse_arg_uint16' argument 2 names different: declaration 'status' definition 'out_status'.
+parse_arg_uint16(char *name, int *out_status)
+                                  ^
+apps/btshell/src/parse.c:338:37: style:inconclusive: Function 'parse_arg_time_dflt' argument 2 names different: declaration 'step' definition 'step_us'. [funcArgNamesDifferent]
+parse_arg_time_dflt(char *name, int step_us, uint32_t dflt, int *out_status)
+                                    ^
+apps/btshell/src/cmd.h:31:46: note: Function 'parse_arg_time_dflt' argument 2 names different: declaration 'step' definition 'step_us'.
+uint32_t parse_arg_time_dflt(char *name, int step, uint32_t dflt, int *out_status);
+                                             ^
+apps/btshell/src/parse.c:338:37: note: Function 'parse_arg_time_dflt' argument 2 names different: declaration 'step' definition 'step_us'.
+parse_arg_time_dflt(char *name, int step_us, uint32_t dflt, int *out_status)
+                                    ^
+apps/btshell/src/parse.c:578:22: style:inconclusive: Function 'parse_arg_uuid' argument 1 names different: declaration 'name' definition 'str'. [funcArgNamesDifferent]
+parse_arg_uuid(char *str, ble_uuid_any_t *uuid)
+                     ^
+apps/btshell/src/cmd.h:59:26: note: Function 'parse_arg_uuid' argument 1 names different: declaration 'name' definition 'str'.
+int parse_arg_uuid(char *name, ble_uuid_any_t *uuid);
+                         ^
+apps/btshell/src/parse.c:578:22: note: Function 'parse_arg_uuid' argument 1 names different: declaration 'name' definition 'str'.
+parse_arg_uuid(char *str, ble_uuid_any_t *uuid)
+                     ^
+apps/btshell/src/parse.c:656:17: style: struct member 'Anonymous0::scheme' is never used. [unusedStructMember]
+        uint8_t scheme;
+                ^
+apps/btshell/src/parse.c:666:17: style: struct member 'Anonymous1::code' is never used. [unusedStructMember]
+        uint8_t code;
+                ^
+apps/bttester/src/bttester.c:365:33: style:inconclusive: Function 'tester_send_buf' argument 4 names different: declaration 'buf' definition 'data'. [funcArgNamesDifferent]
+                struct os_mbuf *data)
+                                ^
+apps/bttester/src/bttester.h:1066:33: note: Function 'tester_send_buf' argument 4 names different: declaration 'buf' definition 'data'.
+                struct os_mbuf *buf);
+                                ^
+apps/bttester/src/bttester.c:365:33: note: Function 'tester_send_buf' argument 4 names different: declaration 'buf' definition 'data'.
+                struct os_mbuf *data)
+                                ^
+apps/bttester/src/gap.c:1557:38: style: Local variable 'adv_params' shadows outer variable [shadowVariable]
+    static struct ble_gap_adv_params adv_params = {
+                                     ^
+apps/bttester/src/gap.c:248:34: note: Shadowed declaration
+static struct ble_gap_adv_params adv_params = {
+                                 ^
+apps/bttester/src/gap.c:1557:38: note: Shadow variable
+    static struct ble_gap_adv_params adv_params = {
+                                     ^
+nimble/host/src/ble_att_priv.h:51:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(ble_att_stats)
+^
+apps/central/src/main.c:158:8: style: Variable 'rc' is reassigned a value before the old one has been used. [redundantAssignment]
+    rc = ble_hs_id_infer_auto(0, &g_own_addr_type);
+       ^
+apps/central/src/main.c:157:8: note: rc is assigned
+    rc = ble_hs_util_ensure_addr(0);
+       ^
+apps/central/src/main.c:158:8: note: rc is overwritten
+    rc = ble_hs_id_infer_auto(0, &g_own_addr_type);
+       ^
+apps/mesh_badge/src/reel_board.c:312:17: style: Unsigned expression 'stat_count' can't be negative so it is unnecessary to test it. [unsignedPositive]
+ if (stat_count >= 0) {
+                ^
+apps/peripheral/src/main.c:122:8: style: Variable 'rc' is reassigned a value before the old one has been used. [redundantAssignment]
+    rc = ble_gap_adv_start(g_own_addr_type, NULL, 100,
+       ^
+apps/peripheral/src/main.c:118:8: note: rc is assigned
+    rc = ble_gap_adv_rsp_set_fields(&rsp_fields);
+       ^
+apps/peripheral/src/main.c:122:8: note: rc is overwritten
+    rc = ble_gap_adv_start(g_own_addr_type, NULL, 100,
+       ^
+apps/scanner/src/main.c:80:10: style: The scope of the variable 's' can be reduced. [variableScope]
+    char s[BLE_HS_ADV_MAX_SZ];
+         ^
+apps/scanner/src/main.c:81:20: style: The scope of the variable 'u8p' can be reduced. [variableScope]
+    const uint8_t *u8p;
+                   ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:464:24: style: The scope of the variable 'evt' can be reduced. [variableScope]
+    struct ble_hci_ev *evt;
+                       ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:495:24: style: The scope of the variable 'evt' can be reduced. [variableScope]
+    struct ble_hci_ev *evt;
+                       ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:600:21: style: The scope of the variable 'om' can be reduced. [variableScope]
+    struct os_mbuf *om;
+                    ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:642:21: style: The scope of the variable 'om' can be reduced. [variableScope]
+    struct os_mbuf *om;
+                    ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:499:10: style: Variable 'size' is assigned a value that is never used. [unreadVariable]
+    size = 0;
+         ^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:95:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    sprintf(fpath, "%s_%02d.log", MYNEWT_VAL(EDTT_HCI_LOG_FILE), global_device_nbr);
+    ^
+babblesim/edtt/hci_transport/src/edtt_driver_bsim.c:213:2: warning: %i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ sprintf(fifo_path[TO_DEVICE], "%s/Device%i.PTTin",
+ ^
+babblesim/edtt/hci_transport/src/edtt_driver_bsim.c:215:2: warning: %i in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ sprintf(fifo_path[TO_BRIDGE], "%s/Device%i.PTTout",
+ ^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/startup_nrf52_bsim.c:230:10: style: Condition 'forever' is always true [knownConditionTrueFalse]
+  while (forever);
+         ^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/startup_nrf52_bsim.c:229:35: note: Assignment 'forever=1', assigned value is 1
+  volatile unsigned int forever = 1;
+                                  ^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/startup_nrf52_bsim.c:230:10: note: Condition 'forever' is always true
+  while (forever);
+         ^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:99:9: style: Variable 'rc' is not assigned a value. [unassignedVariable]
+    int rc;
+        ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_os_tick.c:88:9: style: The scope of the variable 'delta' can be reduced. [variableScope]
+    int delta;
+        ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_os_tick.c:89:14: style: The scope of the variable 'counter' can be reduced. [variableScope]
+    uint32_t counter;
+             ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_os_tick.c:157:14: style: The scope of the variable 'ocmp' can be reduced. [variableScope]
+    uint32_t ocmp;
+             ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:152:13: style: The scope of the variable 'delta_t' can be reduced. [variableScope]
+    int32_t delta_t;
+            ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:153:14: style: The scope of the variable 'temp' can be reduced. [variableScope]
+    uint32_t temp;
+             ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:154:14: style: The scope of the variable 'cntr' can be reduced. [variableScope]
+    uint32_t cntr;
+             ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:155:21: style: The scope of the variable 'hwtimer' can be reduced. [variableScope]
+    NRF_TIMER_Type *hwtimer;
+                    ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:156:19: style: The scope of the variable 'rtctimer' can be reduced. [variableScope]
+    NRF_RTC_Type *rtctimer;
+                  ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:862:23: style: The scope of the variable 'entry' can be reduced. [variableScope]
+    struct hal_timer *entry;
+                      ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:911:9: style: The scope of the variable 'reset_ocmp' can be reduced. [variableScope]
+    int reset_ocmp;
+        ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:912:23: style: The scope of the variable 'entry' can be reduced. [variableScope]
+    struct hal_timer *entry;
+                      ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:135:15: portability: %d in format string (no. 2) requires 'int' but the argument type is 'ptrdiff_t {aka signed int}'. [invalidPrintfArgType_sint]
+        len = snprintf(tmpbuf, sizeof(tmpbuf), "%u:uart%d %s\n\t%c (%02x) ",
+              ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:374:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:283:20: style: Local variable 'msg' shadows outer variable [shadowVariable]
+        const char msg[] = "openpty() failed";
+                   ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:280:10: note: Shadowed declaration
+    char msg[64];
+         ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:283:20: note: Shadow variable
+        const char msg[] = "openpty() failed";
+                   ^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 32 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:102:0: information: Skipping configuration 'B1000000' since the value of 'B1000000' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 1000000, B1000000 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:42:0: information: Skipping configuration 'B110' since the value of 'B110' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 110, B110 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:84:0: information: Skipping configuration 'B115200' since the value of 'B115200' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 115200, B115200 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:105:0: information: Skipping configuration 'B1152000' since the value of 'B1152000' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 1152000, B1152000 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:60:0: information: Skipping configuration 'B1200' since the value of 'B1200' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 1200, B1200 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:45:0: information: Skipping configuration 'B134' since the value of 'B134' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 134, B134 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:48:0: information: Skipping configuration 'B150' since the value of 'B150' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 150, B150 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:108:0: information: Skipping configuration 'B1500000' since the value of 'B1500000' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 1500000, B1500000 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:63:0: information: Skipping configuration 'B1800' since the value of 'B1800' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 1800, B1800 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:75:0: information: Skipping configuration 'B19200' since the value of 'B19200' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 19200, B19200 },
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/native_uart_cfg.c:51:0: information: Skipping configuration 'B200' since the value of 'B200' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    { 200, B200 },
+^
+ext/tinycrypt/src/aes_encrypt.c:77:15: style: The scope of the variable 't' can be reduced. [variableScope]
+ unsigned int t;
+              ^
+ext/tinycrypt/src/ctr_prng.c:55:15: style: The scope of the variable 'i' can be reduced. [variableScope]
+ unsigned int i;
+              ^
+ext/tinycrypt/src/ctr_prng.c:124:15: style: The scope of the variable 'i' can be reduced. [variableScope]
+ unsigned int i;
+              ^
+ext/tinycrypt/src/ctr_prng.c:127:10: style: The scope of the variable 'zeroArr' can be reduced. [variableScope]
+ uint8_t zeroArr[TC_AES_BLOCK_SIZE] = {0U};
+         ^
+ext/tinycrypt/src/ctr_prng.c:170:15: style: The scope of the variable 'i' can be reduced. [variableScope]
+ unsigned int i;
+              ^
+ext/tinycrypt/src/ctr_prng.c:173:10: style: The scope of the variable 'seed_material' can be reduced. [variableScope]
+ uint8_t seed_material[TC_AES_KEY_SIZE + TC_AES_BLOCK_SIZE];
+         ^
+ext/tinycrypt/src/ecc_dsa.c:261:56: style:inconclusive: Boolean expression '!!uECC_vli_testBit(u1,num_bits-1)' is used in bitwise operation. Did you mean '||'? [bitwiseOnBoolean]
+ point = points[(!!uECC_vli_testBit(u1, num_bits - 1)) |
+                                                       ^
+ext/tinycrypt/src/ecc_dsa.c:272:39: style:inconclusive: Boolean expression '!!uECC_vli_testBit(u1,i)' is used in bitwise operation. Did you mean '||'? [bitwiseOnBoolean]
+  index = (!!uECC_vli_testBit(u1, i)) | ((!!uECC_vli_testBit(u2, i)) << 1);
+                                      ^
+ext/tinycrypt/src/ecc_platform_specific.c:77:38: style: Checking if unsigned expression 'size' is less than zero. [unsignedLessThanZero]
+  if (dest == (uint8_t *) 0 || (size <= 0))
+                                     ^
+ext/tinycrypt/src/hmac_prng.c:179:15: style: The scope of the variable 'bufferlen' can be reduced. [variableScope]
+ unsigned int bufferlen;
+              ^
+ext/tinycrypt/src/sha256.c:184:15: style: The scope of the variable 's0' can be reduced. [variableScope]
+ unsigned int s0, s1;
+              ^
+ext/tinycrypt/src/sha256.c:184:19: style: The scope of the variable 's1' can be reduced. [variableScope]
+ unsigned int s0, s1;
+                  ^
+ext/tinycrypt/src/sha256.c:187:15: style: The scope of the variable 'n' can be reduced. [variableScope]
+ unsigned int n;
+              ^
+nimble/controller/src/ble_ll.c:298:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_NAME_START is a macro then please configure it. [unknownMacro]
+STATS_NAME_START(ble_ll_stats)
+^
+nimble/controller/src/ble_ll_hci_ev.c:46:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:78:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:109:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:217:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:241:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:272:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:297:24: style: The scope of the variable 'hci_ev' can be reduced. [variableScope]
+    struct ble_hci_ev *hci_ev;
+                       ^
+nimble/controller/src/ble_ll_hci_ev.c:560:18: style: The scope of the variable 'str_len' can be reduced. [variableScope]
+    unsigned int str_len;
+                 ^
+nimble/controller/src/ble_ll_hci_ev.c:561:10: style: The scope of the variable 'skip' can be reduced. [variableScope]
+    bool skip = true;
+         ^
+nimble/controller/src/ble_ll_hci_ev.c:562:13: style: The scope of the variable 'digit' can be reduced. [variableScope]
+    uint8_t digit;
+            ^
+nimble/controller/src/ble_ll_hci_ev.c:564:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i;
+        ^
+nimble/controller/src/ble_ll_hci_supp_cmd.c:31:0: error: failed to expand 'OCTET', it is invalid to use a preprocessor directive as macro parameter [preprocessorErrorDirective]
+#if MYNEWT_VAL(BLE_LL_ROLE_PERIPHERAL) || MYNEWT_VAL(BLE_LL_ROLE_CENTRAL)
+^
+nimble/controller/src/ble_ll_rand.c:164:14: style: The scope of the variable 'sum' can be reduced. [variableScope]
+    uint16_t sum;
+             ^
+nimble/controller/src/ble_ll_sched.c:766:14: style: The scope of the variable 'rand_ticks' can be reduced. [variableScope]
+    uint32_t rand_ticks;
+             ^
+nimble/controller/src/ble_ll_sched.c:586:35: error: Uninitialized variable: max_delay [uninitvar]
+    rc = ble_ll_sched_insert(sch, max_delay, preempt_none);
+                                  ^
+nimble/controller/src/ble_ll_sched.c:241:40: error: Uninitialized variable: max_delay [uninitvar]
+    max_start_time = sch->start_time + max_delay;
+                                       ^
+nimble/controller/src/ble_ll_sched.c:568:9: note: Assuming condition is false
+    if (calc_sch) {
+        ^
+nimble/controller/src/ble_ll_sched.c:586:35: note: Calling function 'ble_ll_sched_insert', 2nd argument 'max_delay' value is <Uninit>
+    rc = ble_ll_sched_insert(sch, max_delay, preempt_none);
+                                  ^
+nimble/controller/src/ble_ll_sched.c:241:40: note: Uninitialized variable: max_delay
+    max_start_time = sch->start_time + max_delay;
+                                       ^
+nimble/controller/src/ble_ll_sched.c:586:35: error: Uninitialized variable: max_delay [uninitvar]
+    rc = ble_ll_sched_insert(sch, max_delay, preempt_none);
+                                  ^
+nimble/controller/src/ble_ll_sched.c:568:9: note: Assuming condition is false
+    if (calc_sch) {
+        ^
+nimble/controller/src/ble_ll_sched.c:586:35: note: Uninitialized variable: max_delay
+    rc = ble_ll_sched_insert(sch, max_delay, preempt_none);
+                                  ^
+nimble/controller/src/ble_ll_sched.c:570:23: style: Variable 'earliest_start' is reassigned a value before the old one has been used. [redundantAssignment]
+        sch->end_time = earliest_start +
+                      ^
+nimble/controller/src/ble_ll_sched.c:570:23: note: earliest_start is assigned
+        sch->end_time = earliest_start +
+                      ^
+nimble/controller/src/ble_ll_sched.c:570:23: note: earliest_start is overwritten
+        sch->end_time = earliest_start +
+                      ^
+nimble/controller/src/ble_ll_sched.c:577:28: error: Uninitialized variable: min_win_offset [uninitvar]
+        sch->start_time += min_win_offset;
+                           ^
+nimble/controller/src/ble_ll_sched.c:578:26: error: Uninitialized variable: min_win_offset [uninitvar]
+        sch->end_time += min_win_offset;
+                         ^
+nimble/controller/src/ble_ll_sched.c:581:47: error: Uninitialized variable: min_win_offset [uninitvar]
+        max_delay = connsm->conn_itvl_ticks - min_win_offset;
+                                              ^
+nimble/controller/src/ble_ll_sched.c:570:23: style: Variable 'earliest_start' is assigned a value that is never used. [unreadVariable]
+        sch->end_time = earliest_start +
+                      ^
+nimble/controller/src/ble_ll_utils.c:42:14: style: The scope of the variable 'prev_bit' can be reduced. [variableScope]
+    uint32_t prev_bit;
+             ^
+nimble/controller/src/ble_ll_utils.c:221:13: style: The scope of the variable 'usable_chans' can be reduced. [variableScope]
+    uint8_t usable_chans;
+            ^
+nimble/controller/src/ble_ll_utils.c:464:14: style: The scope of the variable 'total_sca_ppm' can be reduced. [variableScope]
+    uint32_t total_sca_ppm;
+             ^
+nimble/controller/src/ble_ll_utils.c:467:14: style: The scope of the variable 'delta_msec' can be reduced. [variableScope]
+    uint32_t delta_msec;
+             ^
+nimble/controller/src/ble_ll_whitelist.c:85:9: style: Condition '!ble_ll_whitelist_chg_allowed()' is always true [knownConditionTrueFalse]
+    if (!ble_ll_whitelist_chg_allowed()) {
+        ^
+nimble/controller/src/ble_ll_whitelist.c:205:9: style: Condition '!ble_ll_whitelist_chg_allowed()' is always true [knownConditionTrueFalse]
+    if (!ble_ll_whitelist_chg_allowed()) {
+        ^
+nimble/controller/src/ble_ll_whitelist.c:253:9: style: Condition '!ble_ll_whitelist_chg_allowed()' is always true [knownConditionTrueFalse]
+    if (!ble_ll_whitelist_chg_allowed()) {
+        ^
+nimble/drivers/dialog_cmac/src/ble_hw.c:221:31: style: The scope of the variable 'e' can be reduced. [variableScope]
+    struct ble_hw_resolv_irk *e;
+                              ^
+nimble/drivers/dialog_cmac/src/ble_phy.c:43:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(ble_phy_stats)
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:656:42: style:inconclusive: Function 'ble_rf_setup_tx' argument 2 names different: declaration 'mode' definition 'phy_mode'. [funcArgNamesDifferent]
+ble_rf_setup_tx(uint8_t rf_chan, uint8_t phy_mode)
+                                         ^
+nimble/drivers/dialog_cmac/src/ble_rf_priv.h:32:47: note: Function 'ble_rf_setup_tx' argument 2 names different: declaration 'mode' definition 'phy_mode'.
+void ble_rf_setup_tx(uint8_t rf_chan, uint8_t mode);
+                                              ^
+nimble/drivers/dialog_cmac/src/ble_rf.c:656:42: note: Function 'ble_rf_setup_tx' argument 2 names different: declaration 'mode' definition 'phy_mode'.
+ble_rf_setup_tx(uint8_t rf_chan, uint8_t phy_mode)
+                                         ^
+nimble/drivers/dialog_cmac/src/ble_rf.c:695:42: style:inconclusive: Function 'ble_rf_setup_rx' argument 2 names different: declaration 'mode' definition 'phy_mode'. [funcArgNamesDifferent]
+ble_rf_setup_rx(uint8_t rf_chan, uint8_t phy_mode)
+                                         ^
+nimble/drivers/dialog_cmac/src/ble_rf_priv.h:33:47: note: Function 'ble_rf_setup_rx' argument 2 names different: declaration 'mode' definition 'phy_mode'.
+void ble_rf_setup_rx(uint8_t rf_chan, uint8_t mode);
+                                              ^
+nimble/drivers/dialog_cmac/src/ble_rf.c:695:42: note: Function 'ble_rf_setup_rx' argument 2 names different: declaration 'mode' definition 'phy_mode'.
+ble_rf_setup_rx(uint8_t rf_chan, uint8_t phy_mode)
+                                         ^
+nimble/drivers/fem/sky66112/src/sky66112.c:120:13: style: The scope of the variable 'ant' can be reduced. [variableScope]
+    uint8_t ant;
+            ^
+nimble/drivers/fem/sky66403/src/sky66403.c:120:13: style: The scope of the variable 'ant' can be reduced. [variableScope]
+    uint8_t ant;
+            ^
+nimble/drivers/native/src/ble_phy.c:91:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(ble_phy_stats)
+^
+nimble/drivers/nrf51/src/ble_hw.c:250:14: style: The scope of the variable 'end' can be reduced. [variableScope]
+    uint32_t end;
+             ^
+nimble/drivers/nrf51/src/ble_hw.c:251:14: style: The scope of the variable 'err' can be reduced. [variableScope]
+    uint32_t err;
+             ^
+nimble/drivers/nrf51/src/ble_hw.c:285:13: style: The scope of the variable 'rnum' can be reduced. [variableScope]
+    uint8_t rnum;
+            ^
+nimble/drivers/nrf51/src/ble_phy.c:133:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(ble_phy_stats)
+^
+nimble/drivers/nrf5x/src/ble_hw.c:314:13: style: The scope of the variable 'rnum' can be reduced. [variableScope]
+    uint8_t rnum;
+            ^
+nimble/drivers/nrf5x/src/ble_phy.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 25 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+nimble/drivers/nrf5x/src/ble_phy.c:254:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(ble_phy_stats)
+^
+nimble/drivers/nrf5x/src/nrf52/phy.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 19 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:54:35: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_START = DPPI_CH_SUB(RTC0_EVENTS_COMPARE_0);
+                                  ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:60:35: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_START = DPPI_CH_UNSUB(RTC0_EVENTS_COMPARE_0);
+                                  ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:61:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[3] = DPPI_CH_UNSUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:62:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_DISABLE = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_3);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:68:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_TXEN = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:74:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_TXEN = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:80:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_RXEN = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:86:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_RXEN = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:92:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_CCM->SUBSCRIBE_CRYPT = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:98:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_CCM->SUBSCRIBE_CRYPT = DPPI_CH_UNSUB(RADIO_EVENTS_ADDRESS);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:104:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_AAR->SUBSCRIBE_START = DPPI_CH_SUB(RADIO_EVENTS_BCMATCH);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:110:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_AAR->SUBSCRIBE_START = DPPI_CH_UNSUB(RADIO_EVENTS_BCMATCH);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:116:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[3] = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:117:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_DISABLE = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_3);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:123:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[3] = DPPI_CH_UNSUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:124:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_DISABLE = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_3);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:148:35: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_START = DPPI_CH_UNSUB(RTC0_EVENTS_COMPARE_0);
+                                  ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:149:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[3] = DPPI_CH_UNSUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:150:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_DISABLE = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_3);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:151:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_TXEN = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:152:33: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->SUBSCRIBE_RXEN = DPPI_CH_UNSUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:153:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_AAR->SUBSCRIBE_START = DPPI_CH_UNSUB(RADIO_EVENTS_BCMATCH);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:154:32: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_CCM->SUBSCRIBE_CRYPT = DPPI_CH_UNSUB(RADIO_EVENTS_ADDRESS);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:54:35: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->SUBSCRIBE_START = DPPI_CH_SUB(RTC0_EVENTS_COMPARE_0);
+                                  ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:68:33: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->SUBSCRIBE_TXEN = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:80:33: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->SUBSCRIBE_RXEN = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_0);
+                                ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:92:32: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_CCM->SUBSCRIBE_CRYPT = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:104:32: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_AAR->SUBSCRIBE_START = DPPI_CH_SUB(RADIO_EVENTS_BCMATCH);
+                               ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:116:40: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[3] = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy_ppi.h:117:36: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->SUBSCRIBE_DISABLE = DPPI_CH_SUB(TIMER0_EVENTS_COMPARE_3);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+nimble/drivers/nrf5x/src/nrf53/phy.c:175:38: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->PUBLISH_COMPARE[0] = DPPI_CH_PUB(TIMER0_EVENTS_COMPARE_0);
+                                     ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:176:38: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->PUBLISH_COMPARE[3] = DPPI_CH_PUB(TIMER0_EVENTS_COMPARE_3);
+                                     ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:177:30: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->PUBLISH_END = DPPI_CH_PUB(RADIO_EVENTS_END);
+                             ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:178:34: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->PUBLISH_BCMATCH = DPPI_CH_PUB(RADIO_EVENTS_BCMATCH);
+                                 ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:179:34: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RADIO->PUBLISH_ADDRESS = DPPI_CH_PUB(RADIO_EVENTS_ADDRESS);
+                                 ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:180:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_RTC0->PUBLISH_COMPARE[0] = DPPI_CH_PUB(RTC0_EVENTS_COMPARE_0);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:186:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[1] = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:188:40: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[2] = DPPI_CH_SUB(RADIO_EVENTS_END);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:175:38: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->PUBLISH_COMPARE[0] = DPPI_CH_PUB(TIMER0_EVENTS_COMPARE_0);
+                                     ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:176:38: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->PUBLISH_COMPARE[3] = DPPI_CH_PUB(TIMER0_EVENTS_COMPARE_3);
+                                     ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:177:30: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->PUBLISH_END = DPPI_CH_PUB(RADIO_EVENTS_END);
+                             ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:178:34: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->PUBLISH_BCMATCH = DPPI_CH_PUB(RADIO_EVENTS_BCMATCH);
+                                 ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:179:34: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RADIO->PUBLISH_ADDRESS = DPPI_CH_PUB(RADIO_EVENTS_ADDRESS);
+                                 ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:180:36: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_RTC0->PUBLISH_COMPARE[0] = DPPI_CH_PUB(RTC0_EVENTS_COMPARE_0);
+                                   ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:186:40: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[1] = DPPI_CH_SUB(RADIO_EVENTS_ADDRESS);
+                                       ^
+nimble/drivers/nrf5x/src/nrf53/phy.c:188:40: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+    NRF_TIMER0->SUBSCRIBE_CAPTURE[2] = DPPI_CH_SUB(RADIO_EVENTS_END);
+                                       ^
+nimble/host/mesh/src/access.c:670:33: style: The scope of the variable 'op' can be reduced. [variableScope]
+ const struct bt_mesh_model_op *op;
+                                ^
+nimble/host/mesh/src/access.c:811:58: style:inconclusive: Function 'bt_mesh_model_extensions_walk' argument 1 names different: declaration 'root' definition 'model'. [funcArgNamesDifferent]
+void bt_mesh_model_extensions_walk(struct bt_mesh_model *model,
+                                                         ^
+nimble/host/mesh/src/access.h:30:58: note: Function 'bt_mesh_model_extensions_walk' argument 1 names different: declaration 'root' definition 'model'.
+void bt_mesh_model_extensions_walk(struct bt_mesh_model *root,
+                                                         ^
+nimble/host/mesh/src/access.c:811:58: note: Function 'bt_mesh_model_extensions_walk' argument 1 names different: declaration 'root' definition 'model'.
+void bt_mesh_model_extensions_walk(struct bt_mesh_model *model,
+                                                         ^
+nimble/host/mesh/src/net.h:173:2: warning: Expression '0-1' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversion]
+ ATOMIC_DEFINE(added, LPN_GROUPS);
+ ^
+nimble/host/mesh/src/net.h:174:2: warning: Expression '0-1' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversion]
+ ATOMIC_DEFINE(pending, LPN_GROUPS);
+ ^
+nimble/host/mesh/src/net.h:175:2: warning: Expression '0-1' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversion]
+ ATOMIC_DEFINE(to_remove, LPN_GROUPS);
+ ^
+nimble/host/mesh/src/access.c:343:0: information: Skipping configuration 'CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE' since the value of 'CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE) {
+^
+nimble/host/mesh/src/access.c:611:0: information: Skipping configuration 'CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE' since the value of 'CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (CONFIG_BT_MESH_MODEL_VND_MSG_CID_FORCE &&
+^
+nimble/host/mesh/src/aes-ccm.c:36:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, j, err;
+     ^
+nimble/host/mesh/src/aes-ccm.c:36:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j, err;
+        ^
+nimble/host/mesh/src/aes-ccm.c:149:6: style: The scope of the variable 'err' can be reduced. [variableScope]
+ int err;
+     ^
+nimble/host/mesh/src/cfg.c:23:10: style: struct member 'cfg_val::net_transmit' is never used. [unusedStructMember]
+ uint8_t net_transmit;
+         ^
+nimble/host/mesh/src/cfg.c:24:10: style: struct member 'cfg_val::relay' is never used. [unusedStructMember]
+ uint8_t relay;
+         ^
+nimble/host/mesh/src/cfg.c:25:10: style: struct member 'cfg_val::relay_retransmit' is never used. [unusedStructMember]
+ uint8_t relay_retransmit;
+         ^
+nimble/host/mesh/src/cfg.c:26:10: style: struct member 'cfg_val::beacon' is never used. [unusedStructMember]
+ uint8_t beacon;
+         ^
+nimble/host/mesh/src/cfg.c:27:10: style: struct member 'cfg_val::gatt_proxy' is never used. [unusedStructMember]
+ uint8_t gatt_proxy;
+         ^
+nimble/host/mesh/src/cfg.c:28:10: style: struct member 'cfg_val::frnd' is never used. [unusedStructMember]
+ uint8_t frnd;
+         ^
+nimble/host/mesh/src/cfg.c:86:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (!IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/cfg.c:107:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (!IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/cfg.c:198:0: information: Skipping configuration 'CONFIG_BT_MESH_RELAY' since the value of 'CONFIG_BT_MESH_RELAY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (!CONFIG_BT_MESH_RELAY) {
+^
+nimble/host/mesh/src/cfg.c:229:0: information: Skipping configuration 'CONFIG_BT_MESH_RELAY' since the value of 'CONFIG_BT_MESH_RELAY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (!CONFIG_BT_MESH_RELAY) {
+^
+nimble/host/mesh/src/cfg_srv.c:492:2: style: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+ os_mbuf_free_chain(msg);
+ ^
+nimble/host/mesh/src/crypto.c:114:6: style: Variable 'pad' is reassigned a value before the old one has been used. [redundantAssignment]
+ pad = 0x03;
+     ^
+nimble/host/mesh/src/crypto.c:105:6: note: pad is assigned
+ pad = 0x02;
+     ^
+nimble/host/mesh/src/crypto.c:114:6: note: pad is overwritten
+ pad = 0x03;
+     ^
+nimble/host/mesh/src/heartbeat.c:224:51: style:inconclusive: Function 'bt_mesh_hb_pub_set' argument 1 names different: declaration 'hb_pub' definition 'new_pub'. [funcArgNamesDifferent]
+uint8_t bt_mesh_hb_pub_set(struct bt_mesh_hb_pub *new_pub)
+                                                  ^
+nimble/host/mesh/src/heartbeat.h:39:51: note: Function 'bt_mesh_hb_pub_set' argument 1 names different: declaration 'hb_pub' definition 'new_pub'.
+uint8_t bt_mesh_hb_pub_set(struct bt_mesh_hb_pub *hb_pub);
+                                                  ^
+nimble/host/mesh/src/heartbeat.c:224:51: note: Function 'bt_mesh_hb_pub_set' argument 1 names different: declaration 'hb_pub' definition 'new_pub'.
+uint8_t bt_mesh_hb_pub_set(struct bt_mesh_hb_pub *new_pub)
+                                                  ^
+nimble/host/mesh/src/heartbeat.c:148:25: style: Local variable 'sub' shadows outer variable [shadowVariable]
+ struct bt_mesh_subnet *sub;
+                        ^
+nimble/host/mesh/src/heartbeat.c:33:30: note: Shadowed declaration
+static struct bt_mesh_hb_sub sub;
+                             ^
+nimble/host/mesh/src/heartbeat.c:148:25: note: Shadow variable
+ struct bt_mesh_subnet *sub;
+                        ^
+nimble/host/mesh/src/heartbeat.c:27:4: style: struct member 'hb_pub_val::indefinite' is never used. [unusedStructMember]
+   indefinite:1;
+   ^
+nimble/host/mesh/src/mesh.c:62:0: information: Skipping configuration 'CONFIG_BT_MESH_CDB' since the value of 'CONFIG_BT_MESH_CDB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_CDB) &&
+^
+nimble/host/mesh/src/mesh.c:388:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/net.c:335:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY) &&
+^
+nimble/host/mesh/src/net.c:557:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY) &&
+^
+nimble/host/mesh/src/net.c:724:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY) &&
+^
+nimble/host/mesh/src/pb_adv.c:231:53: style:inconclusive: Function 'close_link' argument 1 names different: declaration 'status' definition 'reason'. [funcArgNamesDifferent]
+static void close_link(enum prov_bearer_link_status reason)
+                                                    ^
+nimble/host/mesh/src/pb_adv.c:128:53: note: Function 'close_link' argument 1 names different: declaration 'status' definition 'reason'.
+static void close_link(enum prov_bearer_link_status status);
+                                                    ^
+nimble/host/mesh/src/pb_adv.c:231:53: note: Function 'close_link' argument 1 names different: declaration 'status' definition 'reason'.
+static void close_link(enum prov_bearer_link_status reason)
+                                                    ^
+nimble/host/mesh/src/pb_adv.c:685:6: style: Variable 'buf' is assigned a value that is never used. [unreadVariable]
+ buf = start;
+     ^
+nimble/host/mesh/src/prov.c:442:50: style:inconclusive: Function 'bt_mesh_prov_init' argument 1 names different: declaration 'prov' definition 'prov_info'. [funcArgNamesDifferent]
+int bt_mesh_prov_init(const struct bt_mesh_prov *prov_info)
+                                                 ^
+nimble/host/mesh/src/prov.h:176:50: note: Function 'bt_mesh_prov_init' argument 1 names different: declaration 'prov' definition 'prov_info'.
+int bt_mesh_prov_init(const struct bt_mesh_prov *prov);
+                                                 ^
+nimble/host/mesh/src/prov.c:442:50: note: Function 'bt_mesh_prov_init' argument 1 names different: declaration 'prov' definition 'prov_info'.
+int bt_mesh_prov_init(const struct bt_mesh_prov *prov_info)
+                                                 ^
+nimble/host/mesh/src/prov_device.c:533:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/prov_device.c:548:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY) && identity_enable) {
+^
+nimble/host/mesh/src/subnet.c:619:24: style:inconclusive: Function 'bt_mesh_subnet_set' argument 3 names different: declaration 'key' definition 'old_key'. [funcArgNamesDifferent]
+         const uint8_t old_key[16], const uint8_t new_key[16])
+                       ^
+nimble/host/mesh/src/subnet.h:132:24: note: Function 'bt_mesh_subnet_set' argument 3 names different: declaration 'key' definition 'old_key'.
+         const uint8_t key[16], const uint8_t new_key[16]);
+                       ^
+nimble/host/mesh/src/subnet.c:619:24: note: Function 'bt_mesh_subnet_set' argument 3 names different: declaration 'key' definition 'old_key'.
+         const uint8_t old_key[16], const uint8_t new_key[16])
+                       ^
+nimble/host/mesh/src/subnet.c:380:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/subnet.c:548:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (!IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/subnet.c:646:0: information: Skipping configuration 'CONFIG_BT_MESH_GATT_PROXY' since the value of 'CONFIG_BT_MESH_GATT_PROXY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_BT_MESH_GATT_PROXY)) {
+^
+nimble/host/mesh/src/transport.c:783:17: style: The scope of the variable 'tx' can be reduced. [variableScope]
+ struct seg_tx *tx;
+                ^
+nimble/host/services/ans/src/ble_svc_ans.c:157:13: style: The scope of the variable 'cmd_id' can be reduced. [variableScope]
+    uint8_t cmd_id;
+            ^
+nimble/host/services/ans/src/ble_svc_ans.c:158:13: style: The scope of the variable 'cat_id' can be reduced. [variableScope]
+    uint8_t cat_id;
+            ^
+nimble/host/services/ans/src/ble_svc_ans.c:159:13: style: The scope of the variable 'cat_bit_mask' can be reduced. [variableScope]
+    uint8_t cat_bit_mask;
+            ^
+nimble/host/services/ans/src/ble_svc_ans.c:160:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i;
+        ^
+nimble/host/services/ans/src/ble_svc_ans.c:372:9: style: The scope of the variable 'info_str_len' can be reduced. [variableScope]
+    int info_str_len;
+        ^
+nimble/host/services/bas/src/ble_svc_bas.c:102:35: style: The statement 'if (ble_svc_bas_battery_level!=level) ble_svc_bas_battery_level=level' is logically equivalent to 'ble_svc_bas_battery_level=level'. [duplicateConditionalAssign]
+    if (ble_svc_bas_battery_level != level) {
+                                  ^
+nimble/host/services/bas/src/ble_svc_bas.c:103:28: note: Assignment 'ble_svc_bas_battery_level=level'
+ ble_svc_bas_battery_level = level;
+                           ^
+nimble/host/services/bas/src/ble_svc_bas.c:102:35: note: Condition 'ble_svc_bas_battery_level!=level' is redundant
+    if (ble_svc_bas_battery_level != level) {
+                                  ^
+nimble/host/services/bleuart/src/bleuart.c:147:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/src/ble_hs_conn_priv.h:92:17: error: syntax error [syntaxError]
+    STAILQ_HEAD(, os_mbuf_pkthdr) bhc_tx_q;
+                ^
+nimble/host/src/ble_att_clt.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+nimble/host/src/ble_gattc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+nimble/host/store/config/src/ble_store_config.c:149:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:148:43: note: Assignment 'rc=ble_store_config_persist_our_secs()', assigned value is 0
+    rc = ble_store_config_persist_our_secs();
+                                          ^
+nimble/host/store/config/src/ble_store_config.c:149:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:211:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:210:43: note: Assignment 'rc=ble_store_config_persist_our_secs()', assigned value is 0
+    rc = ble_store_config_persist_our_secs();
+                                          ^
+nimble/host/store/config/src/ble_store_config.c:211:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:230:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:229:44: note: Assignment 'rc=ble_store_config_persist_peer_secs()', assigned value is 0
+    rc = ble_store_config_persist_peer_secs();
+                                           ^
+nimble/host/store/config/src/ble_store_config.c:230:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:280:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:279:44: note: Assignment 'rc=ble_store_config_persist_peer_secs()', assigned value is 0
+    rc = ble_store_config_persist_peer_secs();
+                                           ^
+nimble/host/store/config/src/ble_store_config.c:280:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:345:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:344:40: note: Assignment 'rc=ble_store_config_persist_cccds()', assigned value is 0
+    rc = ble_store_config_persist_cccds();
+                                       ^
+nimble/host/store/config/src/ble_store_config.c:345:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:390:12: style: Condition 'rc!=0' is always false [knownConditionTrueFalse]
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:389:40: note: Assignment 'rc=ble_store_config_persist_cccds()', assigned value is 0
+    rc = ble_store_config_persist_cccds();
+                                       ^
+nimble/host/store/config/src/ble_store_config.c:390:12: note: Condition 'rc!=0' is always false
+    if (rc != 0) {
+           ^
+nimble/host/store/config/src/ble_store_config.c:161:14: style: The scope of the variable 'src' can be reduced. [variableScope]
+    uint8_t *src;
+             ^
+nimble/host/store/config/src/ble_store_config.c:162:9: style: The scope of the variable 'move_count' can be reduced. [variableScope]
+    int move_count;
+        ^
+nimble/host/store/ram/src/ble_store_ram.c:162:14: style: The scope of the variable 'src' can be reduced. [variableScope]
+    uint8_t *src;
+             ^
+nimble/host/store/ram/src/ble_store_ram.c:163:9: style: The scope of the variable 'move_count' can be reduced. [variableScope]
+    int move_count;
+        ^
+nimble/host/test/src/ble_att_svr_test.c:824:103: error: syntax error [syntaxError]
+    const ble_uuid_t *uuid = BLE_UUID128_DECLARE( \
+                                                                                                      ^
+nimble/host/test/src/ble_gap_test.c:590:26: style: Variable 'params.filter_policy' is reassigned a value before the old one has been used. [redundantAssignment]
+    params.filter_policy = 6;
+                         ^
+nimble/host/test/src/ble_gap_test.c:582:26: note: params.filter_policy is assigned
+    params.filter_policy = BLE_HCI_SCAN_FILT_NO_WL;
+                         ^
+nimble/host/test/src/ble_gap_test.c:590:26: note: params.filter_policy is overwritten
+    params.filter_policy = 6;
+                         ^
+nimble/host/test/src/ble_gap_test.c:1919:25: style: The scope of the variable 'conn' can be reduced. [variableScope]
+    struct ble_hs_conn *conn;
+                        ^
+nimble/host/test/src/ble_gap_test.c:2060:13: style: The scope of the variable 'id' can be reduced. [variableScope]
+    uint8_t id;
+            ^
+nimble/host/test/src/ble_gap_test.c:1691:27: style: Variable 'hci_cmd.own_addr_type' is assigned a value that is never used. [unreadVariable]
+    hci_cmd.own_addr_type = hci_buf[5];
+                          ^
+nimble/host/test/src/ble_gap_test.c:1692:28: style: Variable 'hci_cmd.peer_addr_type' is assigned a value that is never used. [unreadVariable]
+    hci_cmd.peer_addr_type = hci_buf[6];
+                           ^
+nimble/host/test/src/ble_gap_test.c:1694:22: style: Variable 'hci_cmd.chan_map' is assigned a value that is never used. [unreadVariable]
+    hci_cmd.chan_map = hci_buf[13];
+                     ^
+nimble/host/test/src/ble_gap_test.c:1695:27: style: Variable 'hci_cmd.filter_policy' is assigned a value that is never used. [unreadVariable]
+    hci_cmd.filter_policy = hci_buf[14];
+                          ^
+nimble/host/test/src/ble_gatt_conn_test.c:440:8: style: Variable 'rc' is reassigned a value before the old one has been used. [redundantAssignment]
+    rc = ble_gattc_disc_chrs_by_uuid(2, 2, 0xffff, BLE_UUID16_DECLARE(0x2222),
+       ^
+nimble/host/test/src/ble_gatt_conn_test.c:435:8: note: rc is assigned
+    rc = ble_gattc_disc_all_dscs(2, 3, 0xffff,
+       ^
+nimble/host/test/src/ble_gatt_conn_test.c:440:8: note: rc is overwritten
+    rc = ble_gattc_disc_chrs_by_uuid(2, 2, 0xffff, BLE_UUID16_DECLARE(0x2222),
+       ^
+nimble/host/test/src/ble_gatt_conn_test.c:445:8: style: Variable 'rc' is reassigned a value before the old one has been used. [redundantAssignment]
+    rc = ble_gattc_read(2, BLE_GATT_BREAK_TEST_READ_ATTR_HANDLE,
+       ^
+nimble/host/test/src/ble_gatt_conn_test.c:440:8: note: rc is assigned
+    rc = ble_gattc_disc_chrs_by_uuid(2, 2, 0xffff, BLE_UUID16_DECLARE(0x2222),
+       ^
+nimble/host/test/src/ble_gatt_conn_test.c:445:8: note: rc is overwritten
+    rc = ble_gattc_read(2, BLE_GATT_BREAK_TEST_READ_ATTR_HANDLE,
+       ^
+nimble/host/test/src/ble_gatt_disc_c_test.c:128:9: style: The scope of the variable 'count' can be reduced. [variableScope]
+    int count;
+        ^
+nimble/host/test/src/ble_gatt_disc_d_test.c:119:9: style: The scope of the variable 'count' can be reduced. [variableScope]
+    int count;
+        ^
+nimble/host/test/src/ble_gatt_disc_s_test.c:124:9: style: The scope of the variable 'count' can be reduced. [variableScope]
+    int count;
+        ^
+nimble/host/test/src/ble_gatt_disc_s_test.c:187:9: style: The scope of the variable 'count' can be reduced. [variableScope]
+    int count;
+        ^
+nimble/host/test/src/ble_gatt_disc_s_test.c:565:21: style: The scope of the variable 'oms_temp' can be reduced. [variableScope]
+    struct os_mbuf *oms_temp;
+                    ^
+nimble/host/test/src/ble_gatt_find_s_test.c:209:9: style: The scope of the variable 'num_found' can be reduced. [variableScope]
+    int num_found;
+        ^
+nimble/host/test/src/ble_gatt_read_test.c:295:9: style: The scope of the variable 'num_read' can be reduced. [variableScope]
+    int num_read;
+        ^
+nimble/host/test/src/ble_gatt_read_test.c:902:9: style: Variable 'off' is assigned a value that is never used. [unreadVariable]
+    off += chunk_sz;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:127:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:183:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:303:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:580:9: style: The scope of the variable 'len' can be reduced. [variableScope]
+    int len;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:692:9: style: Variable 'off' is assigned a value that is never used. [unreadVariable]
+    off += chunk_sz;
+        ^
+nimble/host/test/src/ble_gatt_write_test.c:788:9: style: Variable 'off' is assigned a value that is never used. [unreadVariable]
+    off += chunk_sz;
+        ^
+nimble/host/test/src/ble_gatts_notify_test.c:226:25: style: The scope of the variable 'conn' can be reduced. [variableScope]
+    struct ble_hs_conn *conn;
+                        ^
+nimble/host/test/src/ble_gatts_notify_test.c:361:14: style: The scope of the variable 'uuid16' can be reduced. [variableScope]
+    uint16_t uuid16;
+             ^
+nimble/host/test/src/ble_gatts_notify_test.c:1040:23: error: Uninitialized variable: chr1_val_handle [uninitvar]
+    TEST_ASSERT_FATAL(chr1_val_handle != 0);
+                      ^
+nimble/host/test/src/ble_gatts_notify_test.c:1041:23: error: Uninitialized variable: chr2_val_handle [uninitvar]
+    TEST_ASSERT_FATAL(chr2_val_handle != 0);
+                      ^
+nimble/host/test/src/ble_gatts_notify_test.c:1042:23: error: Uninitialized variable: chr3_val_handle [uninitvar]
+    TEST_ASSERT_FATAL(chr3_val_handle != 0);
+                      ^
+nimble/host/test/src/ble_gatts_notify_test.c:1049:12: error: Uninitialized variable: chr1_val_handle [uninitvar]
+        2, chr1_val_handle - 1, BLE_GATTS_CLT_CFG_F_NOTIFY, 0);
+           ^
+nimble/host/test/src/ble_gatts_notify_test.c:1053:12: error: Uninitialized variable: chr1_val_handle [uninitvar]
+        2, chr1_val_handle - 1, BLE_GATTS_CLT_CFG_F_INDICATE, 1);
+           ^
+nimble/host/test/src/ble_gatts_notify_test.c:1057:12: error: Uninitialized variable: chr2_val_handle [uninitvar]
+        2, chr2_val_handle - 1, BLE_GATTS_CLT_CFG_F_NOTIFY, 1);
+           ^
+nimble/host/test/src/ble_gatts_notify_test.c:1061:12: error: Uninitialized variable: chr2_val_handle [uninitvar]
+        2, chr2_val_handle - 1, BLE_GATTS_CLT_CFG_F_INDICATE, 0);
+           ^
+nimble/host/test/src/ble_gatts_notify_test.c:1065:12: error: Uninitialized variable: chr3_val_handle [uninitvar]
+        2, chr3_val_handle - 1, BLE_GATTS_CLT_CFG_F_NOTIFY, 0);
+           ^
+nimble/host/test/src/ble_gatts_notify_test.c:1069:12: error: Uninitialized variable: chr3_val_handle [uninitvar]
+        2, chr3_val_handle - 1, BLE_GATTS_CLT_CFG_F_INDICATE, 0);
+           ^
+nimble/host/test/src/ble_gatts_read_test.c:98:14: style: The scope of the variable 'uuid16' can be reduced. [variableScope]
+    uint16_t uuid16;
+             ^
+nimble/host/test/src/ble_gatts_reg_test.c:119:12: style: Variable 'rc' is assigned a value that is never used. [unreadVariable]
+        rc = ble_gatts_find_dsc(entry->svc->uuid, entry->chr->uuid,
+           ^
+nimble/host/test/src/ble_gatts_reg_test.c:545:14: style: Variable 'val_handles' is not assigned a value. [unassignedVariable]
+    uint16_t val_handles[16];
+             ^
+nimble/host/test/src/ble_gatts_reg_test.c:600:14: style: Variable 'val_handles' is not assigned a value. [unassignedVariable]
+    uint16_t val_handles[16];
+             ^
+nimble/host/test/src/ble_hs_adv_test.c:357:55: error: syntax error [syntaxError]
+        0x88, 0x99, 0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff,
+                                                      ^
+nimble/host/test/src/ble_hs_test_util.c:35:20: error: syntax error [syntaxError]
+static STAILQ_HEAD(, os_mbuf_pkthdr) ble_hs_test_util_prev_tx_queue;
+                   ^
+nimble/host/test/src/ble_os_test.c:271:10: style: The scope of the variable 'disconn_handle' can be reduced. [variableScope]
+    int *disconn_handle;
+         ^
+nimble/host/test/src/ble_sm_test.c:266:13: error: Expression '((uint8_t[]){0xe1,0xfc,0xda,0xf4,0xb7,0x6c}),((uint8_t[]){0x03,0x02,0x01,0x50,0x13,0x00}),((struct ble_sm_pair_cmd[1]){.io_cap=0x04,.oob_data_flag=0,.authreq=0x05,.max_enc_key_size=16,.init_key_dist=0x07,.resp_key_dist=0x07,}),((struct ble_sm_pair_cmd[1]){.io_cap=3,.oob_data_flag=0,.authreq=0,.max_enc_key_size=16,.init_key_dist=0,.resp_key_dist=0,}),((struct ble_sm_pair_confirm[1]){.value={0x0a,0xac,0xa2,0xae,0xa6,0x98,0xdc,0x6d,0x65,0x84,0x11,0x69,0x47,0x36,0x8d,0xa0,},}),((struct ble_sm_pair_confirm[1]){.value={0x45,0xd2,0x2c,0x38,0xd8,0x91,0x4f,0x19,0xa2,0xd4,0xfc,0x7d,0xad,0x37,0x79,0xe0},})' depends on order of evaluation of side effects [unknownEvaluationOrder]
+        } }),
+            ^
+nimble/host/test/src/ble_sm_test.c:272:13: error: Expression '((uint8_t[]){0xe1,0xfc,0xda,0xf4,0xb7,0x6c}),((uint8_t[]){0x03,0x02,0x01,0x50,0x13,0x00}),((struct ble_sm_pair_cmd[1]){.io_cap=0x04,.oob_data_flag=0,.authreq=0x05,.max_enc_key_size=16,.init_key_dist=0x07,.resp_key_dist=0x07,}),((struct ble_sm_pair_cmd[1]){.io_cap=3,.oob_data_flag=0,.authreq=0,.max_enc_key_size=16,.init_key_dist=0,.resp_key_dist=0,}),((struct ble_sm_pair_confirm[1]){.value={0x0a,0xac,0xa2,0xae,0xa6,0x98,0xdc,0x6d,0x65,0x84,0x11,0x69,0x47,0x36,0x8d,0xa0,},}),((struct ble_sm_pair_confirm[1]){.value={0x45,0xd2,0x2c,0x38,0xd8,0x91,0x4f,0x19,0xa2,0xd4,0xfc,0x7d,0xad,0x37,0x79,0xe0},}),((struct ble_sm_pair_random[1]){.value={0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,},})' depends on order of evaluation of side effects [unknownEvaluationOrder]
+        } }),
+            ^
+nimble/host/test/src/ble_sm_test.c:278:13: error: Expression '((uint8_t[]){0xe1,0xfc,0xda,0xf4,0xb7,0x6c}),((uint8_t[]){0x03,0x02,0x01,0x50,0x13,0x00}),((struct ble_sm_pair_cmd[1]){.io_cap=0x04,.oob_data_flag=0,.authreq=0x05,.max_enc_key_size=16,.init_key_dist=0x07,.resp_key_dist=0x07,}),((struct ble_sm_pair_cmd[1]){.io_cap=3,.oob_data_flag=0,.authreq=0,.max_enc_key_size=16,.init_key_dist=0,.resp_key_dist=0,}),((struct ble_sm_pair_confirm[1]){.value={0x0a,0xac,0xa2,0xae,0xa6,0x98,0xdc,0x6d,0x65,0x84,0x11,0x69,0x47,0x36,0x8d,0xa0,},}),((struct ble_sm_pair_confirm[1]){.value={0x45,0xd2,0x2c,0x38,0xd8,0x91,0x4f,0x19,0xa2,0xd4,0xfc,0x7d,0xad,0x37,0x79,0xe0},}),((struct ble_sm_pair_random[1]){.value={0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,},}),((struct ble_sm_pair_random[1]){.value={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,},})' depends on order of evaluation of side effects [unknownEvaluationOrder]
+        } }),
+            ^
+nimble/host/test/src/ble_sm_test_util.c:1524:9: style: The scope of the variable 'our_irk_expected' can be reduced. [variableScope]
+    int our_irk_expected;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:1640:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:2147:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:2286:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:2451:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:2599:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:2711:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/host/test/src/ble_sm_test_util.c:648:48: style:inconclusive: Function 'ble_sm_test_util_conn_cb' argument 1 names different: declaration 'ctxt' definition 'event'. [funcArgNamesDifferent]
+ble_sm_test_util_conn_cb(struct ble_gap_event *event, void *arg)
+                                               ^
+nimble/host/test/src/ble_sm_test_util.h:85:52: note: Function 'ble_sm_test_util_conn_cb' argument 1 names different: declaration 'ctxt' definition 'event'.
+int ble_sm_test_util_conn_cb(struct ble_gap_event *ctxt, void *arg);
+                                                   ^
+nimble/host/test/src/ble_sm_test_util.c:648:48: note: Function 'ble_sm_test_util_conn_cb' argument 1 names different: declaration 'ctxt' definition 'event'.
+ble_sm_test_util_conn_cb(struct ble_gap_event *event, void *arg)
+                                               ^
+nimble/host/test/src/ble_sm_test_util.c:1830:14: style:inconclusive: Function 'ble_sm_test_util_peer_fail_inval' argument 2 names different: declaration 'init_addr' definition 'init_id_addr'. [funcArgNamesDifferent]
+    uint8_t *init_id_addr,
+             ^
+nimble/host/test/src/ble_sm_test_util.h:102:48: note: Function 'ble_sm_test_util_peer_fail_inval' argument 2 names different: declaration 'init_addr' definition 'init_id_addr'.
+                                      uint8_t *init_addr,
+                                               ^
+nimble/host/test/src/ble_sm_test_util.c:1830:14: note: Function 'ble_sm_test_util_peer_fail_inval' argument 2 names different: declaration 'init_addr' definition 'init_id_addr'.
+    uint8_t *init_id_addr,
+             ^
+nimble/host/test/src/ble_sm_test_util.c:1881:14: style:inconclusive: Function 'ble_sm_test_util_peer_lgcy_fail_confirm' argument 1 names different: declaration 'init_addr' definition 'init_id_addr'. [funcArgNamesDifferent]
+    uint8_t *init_id_addr,
+             ^
+nimble/host/test/src/ble_sm_test_util.h:107:14: note: Function 'ble_sm_test_util_peer_lgcy_fail_confirm' argument 1 names different: declaration 'init_addr' definition 'init_id_addr'.
+    uint8_t *init_addr,
+             ^
+nimble/host/test/src/ble_sm_test_util.c:1881:14: note: Function 'ble_sm_test_util_peer_lgcy_fail_confirm' argument 1 names different: declaration 'init_addr' definition 'init_id_addr'.
+    uint8_t *init_id_addr,
+             ^
+nimble/host/test/src/ble_store_test.c:74:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+nimble/transport/cdc/src/cdc_hci.c:44:17: error: syntax error [syntaxError]
+    STAILQ_HEAD(, usb_in_packet) queue;
+                ^
+nimble/transport/common/hci_ipc/src/hci_ipc.c:230:22: style: Variable '0' is assigned a value that is never used. [unreadVariable]
+    shm->n2a_num_acl = MYNEWT_VAL(BLE_TRANSPORT_ACL_FROM_LL_COUNT);
+                     ^
+nimble/transport/common/hci_ipc/src/hci_ipc.c:231:22: style: Variable '0' is assigned a value that is never used. [unreadVariable]
+    shm->n2a_num_evt = MYNEWT_VAL(BLE_TRANSPORT_EVT_COUNT);
+                     ^
+nimble/transport/common/hci_ipc/src/hci_ipc.c:232:27: style: Variable '0' is assigned a value that is never used. [unreadVariable]
+    shm->n2a_num_evt_disc = MYNEWT_VAL(BLE_TRANSPORT_EVT_DISCARDABLE_COUNT);
+                          ^
+nimble/transport/emspi/src/ble_hci_emspi.c:72:13: error: syntax error [syntaxError]
+STAILQ_HEAD(, ble_hci_emspi_pkt) ble_hci_emspi_tx_q;
+            ^
+nimble/transport/nrf5340/src/nrf5340_ble_hci.c:43:21: style: The scope of the variable 'x' can be reduced. [variableScope]
+    struct os_mbuf *x;
+                    ^
+nimble/transport/socket/src/ble_hci_socket.c:101:1: error: There is an unknown macro here somewhere. Configuration is required. If STATS_SECT_START is a macro then please configure it. [unknownMacro]
+STATS_SECT_START(hci_sock_stats)
+^
+nimble/transport/uart/src/hci_uart.c:48:20: error: syntax error [syntaxError]
+static STAILQ_HEAD(, hci_uart_tx) tx_q;
+                   ^
+nimble/transport/uart_ll/src/hci_uart.c:46:20: error: syntax error [syntaxError]
+static STAILQ_HEAD(, hci_uart_tx) tx_q;
+                   ^
+nimble/transport/usb/src/ble_hci_usb.c:57:17: error: syntax error [syntaxError]
+    STAILQ_HEAD(, ble_hci_pkt) queue;
+                ^
+porting/nimble/src/endian.c:245:13: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+    uint8_t tmp;
+            ^
+porting/nimble/src/hal_timer.c:228:24: style: Variable 'rtctimer->INTENCLR' is reassigned a value before the old one has been used. [redundantAssignment]
+    rtctimer->INTENCLR = RTC_INTENCLR_TICK_Msk;
+                       ^
+porting/nimble/src/hal_timer.c:227:24: note: rtctimer->INTENCLR is assigned
+    rtctimer->INTENCLR = NRF_TIMER_INT_MASK(NRF_RTC_TIMER_CC_INT);
+                       ^
+porting/nimble/src/hal_timer.c:228:24: note: rtctimer->INTENCLR is overwritten
+    rtctimer->INTENCLR = RTC_INTENCLR_TICK_Msk;
+                       ^
+porting/nimble/src/hal_timer.c:148:13: style: The scope of the variable 'delta_t' can be reduced. [variableScope]
+    int32_t delta_t;
+            ^
+porting/nimble/src/hal_timer.c:149:14: style: The scope of the variable 'temp' can be reduced. [variableScope]
+    uint32_t temp;
+             ^
+porting/nimble/src/hal_timer.c:150:14: style: The scope of the variable 'cntr' can be reduced. [variableScope]
+    uint32_t cntr;
+             ^
+porting/nimble/src/hal_timer.c:151:21: style: The scope of the variable 'hwtimer' can be reduced. [variableScope]
+    NRF_TIMER_Type *hwtimer;
+                    ^
+porting/nimble/src/hal_timer.c:865:23: style: The scope of the variable 'entry' can be reduced. [variableScope]
+    struct hal_timer *entry;
+                      ^
+porting/nimble/src/hal_timer.c:914:9: style: The scope of the variable 'reset_ocmp' can be reduced. [variableScope]
+    int reset_ocmp;
+        ^
+porting/nimble/src/hal_timer.c:915:23: style: The scope of the variable 'entry' can be reduced. [variableScope]
+    struct hal_timer *entry;
+                      ^
+porting/nimble/src/nimble_port.c:60:27: style: The scope of the variable 'ev' can be reduced. [variableScope]
+    struct ble_npl_event *ev;
+                          ^
+porting/nimble/src/os_mbuf.c:59:13: error: syntax error [syntaxError]
+STAILQ_HEAD(, os_mbuf_pool) g_msys_pool_list =
+            ^
+porting/nimble/src/os_mempool.c:41:13: error: syntax error [syntaxError]
+STAILQ_HEAD(, os_mempool) g_os_mempool_list;
+            ^
+porting/nimble/src/os_msys_init.c:25:20: error: syntax error [syntaxError]
+static STAILQ_HEAD(, os_mbuf_pool) g_msys_pool_list =
+                   ^
+porting/npl/linux/test/test_npl_eventq.c:108:15: style: Variable 'count' is assigned a value that is never used. [unreadVariable]
+    int count = 1000000000;
+              ^
+porting/npl/nuttx/test/test_npl_eventq.c:108:15: style: Variable 'count' is assigned a value that is never used. [unreadVariable]
+    int count = 1000000000;
+              ^
+nimble/host/test/src/ble_gap_test.c:397:10: error: Using argument cmd_idx that points at uninitialized variable cmd_idx [ctuuninitvar]
+    if (*cmd_idx == cmd_fail_idx) {
+         ^
+nimble/host/test/src/ble_gap_test.c:2338:40: note: Calling function ble_gap_test_util_rx_param_req, 3rd argument is uninitialized
+    rc = ble_gap_test_util_rx_param_req(peer_params, 1, &cmd_idx, cmd_fail_idx,
+                                       ^
+nimble/host/test/src/ble_gap_test.c:397:10: note: Using argument cmd_idx
+    if (*cmd_idx == cmd_fail_idx) {
+         ^
+nimble/drivers/dialog_cmac/src/ble_hw.c:330:0: style: The function 'CRYPTO_IRQHandler' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_system.c:125:0: style: The function 'NRF_RADIO_BASE_FUN' is never used. [unusedFunction]
+
+^
+babblesim/core/src/cmsis.c:49:0: style: The function 'NVIC_GetPriority' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/startup_nrf52_bsim.c:227:0: style: The function 'SystemDefaultHandler' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:163:0: style: The function '__assert_func' is never used. [unusedFunction]
+
+^
+babblesim/core/src/cmsis.c:72:0: style: The function '__get_PRIMASK' is never used. [unusedFunction]
+
+^
+nimble/host/src/ble_dtm.c:26:0: style: The function 'ble_dtm_rx_start' is never used. [unusedFunction]
+
+^
+nimble/host/src/ble_dtm.c:55:0: style: The function 'ble_dtm_stop' is never used. [unusedFunction]
+
+^
+nimble/host/src/ble_dtm.c:40:0: style: The function 'ble_dtm_tx_start' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:80:0: style: The function 'ble_fem_lna_disable' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:74:0: style: The function 'ble_fem_lna_enable' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:69:0: style: The function 'ble_fem_lna_init' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:63:0: style: The function 'ble_fem_pa_disable' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:57:0: style: The function 'ble_fem_pa_enable' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:51:0: style: The function 'ble_fem_pa_init' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_gatt_disc_s_test.c:260:0: style: The function 'ble_gatt_disc_s_test_misc_good_all' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_gatt_disc_s_test.c:277:0: style: The function 'ble_gatt_disc_s_test_misc_good_uuid' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_gatt_read_test.c:426:0: style: The function 'ble_gatt_read_test_misc_mult_verify_good' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_gatt_read_test.c:244:0: style: The function 'ble_gatt_read_test_misc_verify_good' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_gatt_write_test.c:295:0: style: The function 'ble_gatt_write_test_misc_reliable_good' is never used. [unusedFunction]
+
+^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:811:0: style: The function 'ble_hci_edtt_init' is never used. [unusedFunction]
+
+^
+nimble/host/src/ble_hs_log.c:27:0: style: The function 'ble_hs_log_mbuf' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:349:0: style: The function 'ble_hs_test_util_hci_ack_set_disc' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:118:0: style: The function 'ble_hs_test_util_hci_acks_clear' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:141:0: style: The function 'ble_hs_test_util_hci_build_cmd_status' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:101:0: style: The function 'ble_hs_test_util_hci_out_enqueue' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:86:0: style: The function 'ble_hs_test_util_hci_out_last' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:587:0: style: The function 'ble_hs_test_util_hci_rx_conn_cancel_evt' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_test_util_hci.c:465:0: style: The function 'ble_hs_test_util_hci_verify_tx_create_conn' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:132:0: style: The function 'ble_hw_encrypt_block' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:81:0: style: The function 'ble_hw_get_public_addr' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:87:0: style: The function 'ble_hw_get_static_addr' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:198:0: style: The function 'ble_hw_resolv_list_add' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:192:0: style: The function 'ble_hw_resolv_list_clear' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:238:0: style: The function 'ble_hw_resolv_list_match' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:219:0: style: The function 'ble_hw_resolv_list_rmv' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:232:0: style: The function 'ble_hw_resolv_list_size' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:297:0: style: The function 'ble_hw_resolv_proc_disable' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:266:0: style: The function 'ble_hw_resolv_proc_enable' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:308:0: style: The function 'ble_hw_resolv_proc_reset' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:314:0: style: The function 'ble_hw_resolv_proc_start' is never used. [unusedFunction]
+
+^
+nimble/drivers/native/src/ble_hw.c:192:0: style: The function 'ble_hw_rng_read' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:98:0: style: The function 'ble_hw_whitelist_add' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:93:0: style: The function 'ble_hw_whitelist_clear' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:121:0: style: The function 'ble_hw_whitelist_disable' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:115:0: style: The function 'ble_hw_whitelist_enable' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:126:0: style: The function 'ble_hw_whitelist_match' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:104:0: style: The function 'ble_hw_whitelist_rmv' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_hw.c:109:0: style: The function 'ble_hw_whitelist_size' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:1961:0: style: The function 'ble_ll_hci_acl_rx' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:77:0: style: The function 'ble_ll_hci_adv_mode_ext' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:1919:0: style: The function 'ble_ll_hci_cmd_rx' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:106:0: style: The function 'ble_ll_hci_ev_conn_update' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:294:0: style: The function 'ble_ll_hci_ev_databuf_overflow' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:43:0: style: The function 'ble_ll_hci_ev_datalen_chg' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:269:0: style: The function 'ble_ll_hci_ev_hw_err' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:214:0: style: The function 'ble_ll_hci_ev_rd_rem_used_feat' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:238:0: style: The function 'ble_ll_hci_ev_rd_rem_ver' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:74:0: style: The function 'ble_ll_hci_ev_rem_conn_parm_req' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:556:0: style: The function 'ble_ll_hci_ev_send_vs_assert' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci_ev.c:616:0: style: The function 'ble_ll_hci_ev_send_vs_printf' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:1990:0: style: The function 'ble_ll_hci_init' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:1973:0: style: The function 'ble_ll_hci_iso_rx' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:1763:0: style: The function 'ble_ll_hci_post_cmd_cb_set' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_hci.c:129:0: style: The function 'ble_ll_hci_send_noop' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_pdu.c:49:0: style: The function 'ble_ll_pdu_syncword_us' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_pdu.c:55:0: style: The function 'ble_ll_pdu_us' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_rand.c:208:0: style: The function 'ble_ll_rand_init' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_rand.c:162:0: style: The function 'ble_ll_rand_prand_get' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_rand.c:188:0: style: The function 'ble_ll_rand_start' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_rfmgmt.c:339:0: style: The function 'ble_ll_rfmgmt_init' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:717:0: style: The function 'ble_ll_sched_adv_new' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:807:0: style: The function 'ble_ll_sched_adv_resched_pdu' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:761:0: style: The function 'ble_ll_sched_adv_reschedule' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:420:0: style: The function 'ble_ll_sched_conn_central_new' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:613:0: style: The function 'ble_ll_sched_conn_periph_new' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:339:0: style: The function 'ble_ll_sched_conn_reschedule' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:1164:0: style: The function 'ble_ll_sched_init' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:1090:0: style: The function 'ble_ll_sched_next_time' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:739:0: style: The function 'ble_ll_sched_periodic_adv' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:877:0: style: The function 'ble_ll_sched_rmv_elem' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:914:0: style: The function 'ble_ll_sched_rmv_elem_type' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_sched.c:1152:0: style: The function 'ble_ll_sched_stop' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_utils.c:140:0: style: The function 'ble_ll_utils_calc_aa' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_utils.c:152:0: style: The function 'ble_ll_utils_calc_seed_aa' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_utils.c:460:0: style: The function 'ble_ll_utils_calc_window_widening' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_utils.c:217:0: style: The function 'ble_ll_utils_chan_map_remap' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_whitelist.c:288:0: style: The function 'ble_ll_whitelist_disable' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_whitelist.c:275:0: style: The function 'ble_ll_whitelist_enable' is never used. [unusedFunction]
+
+^
+nimble/controller/src/ble_ll_whitelist.c:167:0: style: The function 'ble_ll_whitelist_match' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/proxy_srv.c:954:0: style: The function 'ble_mesh_proxy_gap_event' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/shell.c:3676:0: style: The function 'ble_mesh_shell_init' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:155:0: style: The function 'ble_npl_callout_get_ticks' is never used. [unusedFunction]
+
+^
+porting/npl/linux/src/os_callout.c:103:0: style: The function 'ble_npl_callout_queued' is never used. [unusedFunction]
+
+^
+porting/npl/linux/src/os_eventq.cc:62:0: style: The function 'ble_npl_eventq_inited' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:52:0: style: The function 'ble_npl_eventq_remove' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:30:0: style: The function 'ble_npl_get_current_task_id' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:89:0: style: The function 'ble_npl_mutex_init' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:95:0: style: The function 'ble_npl_mutex_pend' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:101:0: style: The function 'ble_npl_mutex_release' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:24:0: style: The function 'ble_npl_os_started' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:125:0: style: The function 'ble_npl_sem_get_count' is never used. [unusedFunction]
+
+^
+porting/npl/linux/src/os_task.c:91:0: style: The function 'ble_npl_task_count' is never used. [unusedFunction]
+
+^
+porting/npl/linux/src/os_task.c:80:0: style: The function 'ble_npl_task_remove' is never used. [unusedFunction]
+
+^
+porting/npl/linux/src/os_task.c:107:0: style: The function 'ble_npl_task_yield' is never used. [unusedFunction]
+
+^
+porting/npl/dummy/src/npl_os_dummy.c:173:0: style: The function 'ble_npl_time_ticks_to_ms' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:650:0: style: The function 'ble_rf_calibrate_req' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:618:0: style: The function 'ble_rf_configure' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:751:0: style: The function 'ble_rf_get_rssi' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:542:0: style: The function 'ble_rf_init' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:737:0: style: The function 'ble_rf_set_tx_power' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:695:0: style: The function 'ble_rf_setup_rx' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:656:0: style: The function 'ble_rf_setup_tx' is never used. [unusedFunction]
+
+^
+nimble/drivers/dialog_cmac/src/ble_rf.c:509:0: style: The function 'ble_rf_try_recalibrate' is never used. [unusedFunction]
+
+^
+nimble/host/test/src/ble_hs_stop_test.c:198:0: style: The function 'ble_stop_test_all' is never used. [unusedFunction]
+
+^
+nimble/host/store/config/src/ble_store_config.c:497:0: style: The function 'ble_store_config_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/ans/src/ble_svc_ans.c:312:0: style: The function 'ble_svc_ans_new_alert_add' is never used. [unusedFunction]
+
+^
+nimble/host/services/ans/src/ble_svc_ans.c:295:0: style: The function 'ble_svc_ans_on_gap_connect' is never used. [unusedFunction]
+
+^
+nimble/host/services/ans/src/ble_svc_ans.c:340:0: style: The function 'ble_svc_ans_unr_alert_add' is never used. [unusedFunction]
+
+^
+nimble/host/services/bas/src/ble_svc_bas.c:99:0: style: The function 'ble_svc_bas_battery_level_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/bas/src/ble_svc_bas.c:115:0: style: The function 'ble_svc_bas_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:251:0: style: The function 'ble_svc_dis_firmware_revision' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:257:0: style: The function 'ble_svc_dis_firmware_revision_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:264:0: style: The function 'ble_svc_dis_hardware_revision' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:270:0: style: The function 'ble_svc_dis_hardware_revision_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:319:0: style: The function 'ble_svc_dis_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:290:0: style: The function 'ble_svc_dis_manufacturer_name' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:296:0: style: The function 'ble_svc_dis_manufacturer_name_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:225:0: style: The function 'ble_svc_dis_model_number' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:231:0: style: The function 'ble_svc_dis_model_number_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:238:0: style: The function 'ble_svc_dis_serial_number' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:244:0: style: The function 'ble_svc_dis_serial_number_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:277:0: style: The function 'ble_svc_dis_software_revision' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:283:0: style: The function 'ble_svc_dis_software_revision_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:303:0: style: The function 'ble_svc_dis_system_id' is never used. [unusedFunction]
+
+^
+nimble/host/services/dis/src/ble_svc_dis.c:309:0: style: The function 'ble_svc_dis_system_id_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/gap/src/ble_svc_gap.c:274:0: style: The function 'ble_svc_gap_device_appearance_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/gap/src/ble_svc_gap.c:282:0: style: The function 'ble_svc_gap_set_chr_changed_cb' is never used. [unusedFunction]
+
+^
+nimble/host/services/ias/src/ble_svc_ias.c:128:0: style: The function 'ble_svc_ias_set_cb' is never used. [unusedFunction]
+
+^
+nimble/host/services/ipss/src/ble_svc_ipss.c:39:0: style: The function 'ble_svc_ipss_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/lls/src/ble_svc_lls.c:147:0: style: The function 'ble_svc_lls_alert_level_get' is never used. [unusedFunction]
+
+^
+nimble/host/services/lls/src/ble_svc_lls.c:158:0: style: The function 'ble_svc_lls_alert_level_set' is never used. [unusedFunction]
+
+^
+nimble/host/services/lls/src/ble_svc_lls.c:134:0: style: The function 'ble_svc_lls_on_gap_disconnect' is never used. [unusedFunction]
+
+^
+nimble/host/services/lls/src/ble_svc_lls.c:171:0: style: The function 'ble_svc_lls_set_cb' is never used. [unusedFunction]
+
+^
+nimble/transport/src/transport.c:362:0: style: The function 'ble_transport_ipc_buf_evt_type_get' is never used. [unusedFunction]
+
+^
+nimble/transport/src/transport.c:261:0: style: The function 'ble_transport_ipc_free' is never used. [unusedFunction]
+
+^
+nimble/transport/src/transport.c:353:0: style: The function 'ble_transport_register_put_acl_from_ll_cb' is never used. [unusedFunction]
+
+^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:159:0: style: The function 'ble_transport_to_hs_acl_impl' is never used. [unusedFunction]
+
+^
+babblesim/edtt/hci_transport/src/ble_hci_edtt.c:145:0: style: The function 'ble_transport_to_hs_evt_impl' is never used. [unusedFunction]
+
+^
+nimble/transport/apollo3/src/apollo3_ble_hci.c:331:0: style: The function 'ble_transport_to_ll_acl_impl' is never used. [unusedFunction]
+
+^
+nimble/transport/apollo3/src/apollo3_ble_hci.c:311:0: style: The function 'ble_transport_to_ll_cmd_impl' is never used. [unusedFunction]
+
+^
+nimble/host/services/bleuart/src/bleuart.c:123:0: style: The function 'bleuart_gatt_svr_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/bleuart/src/bleuart.c:191:0: style: The function 'bleuart_init' is never used. [unusedFunction]
+
+^
+nimble/host/services/bleuart/src/bleuart.c:181:0: style: The function 'bleuart_set_conn_handle' is never used. [unusedFunction]
+
+^
+babblesim/core/src/main_config.c:76:0: style: The function 'bsim_start' is never used. [unusedFunction]
+
+^
+babblesim/core/src/main_config.c:27:0: style: The function 'bst_tick' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:793:0: style: The function 'bt_le_adv_start' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:838:0: style: The function 'bt_le_adv_stop' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/app_keys.c:676:0: style: The function 'bt_mesh_app_key_pending_store' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/app_keys.c:419:0: style: The function 'bt_mesh_app_key_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/provisioner.c:667:0: style: The function 'bt_mesh_auth_method_set_input' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/provisioner.c:703:0: style: The function 'bt_mesh_auth_method_set_none' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/provisioner.c:677:0: style: The function 'bt_mesh_auth_method_set_output' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/provisioner.c:687:0: style: The function 'bt_mesh_auth_method_set_static' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/subnet.c:464:0: style: The function 'bt_mesh_friend_cred_create' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/model_cli.c:234:0: style: The function 'bt_mesh_gen_level_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/model_cli.c:263:0: style: The function 'bt_mesh_gen_level_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/model_cli.c:162:0: style: The function 'bt_mesh_gen_onoff_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/model_cli.c:191:0: style: The function 'bt_mesh_gen_onoff_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:182:0: style: The function 'bt_mesh_health_attention_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:215:0: style: The function 'bt_mesh_health_attention_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:486:0: style: The function 'bt_mesh_health_cli_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:476:0: style: The function 'bt_mesh_health_cli_timeout_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:481:0: style: The function 'bt_mesh_health_cli_timeout_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:388:0: style: The function 'bt_mesh_health_fault_clear' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:437:0: style: The function 'bt_mesh_health_fault_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:338:0: style: The function 'bt_mesh_health_fault_test' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:260:0: style: The function 'bt_mesh_health_period_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/health_cli.c:293:0: style: The function 'bt_mesh_health_period_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/prov.c:277:0: style: The function 'bt_mesh_input_number' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/prov.c:292:0: style: The function 'bt_mesh_input_string' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/access.c:267:0: style: The function 'bt_mesh_model_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/access.c:873:0: style: The function 'bt_mesh_model_is_extended' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/access.c:1276:0: style: The function 'bt_mesh_model_settings_commit' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/net.c:738:0: style: The function 'bt_mesh_net_header_parse' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/net.c:1218:0: style: The function 'bt_mesh_net_settings_commit' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/pb_adv.c:794:0: style: The function 'bt_mesh_pb_adv_recv' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/prov_device.c:612:0: style: The function 'bt_mesh_prov_disable' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/prov.c:442:0: style: The function 'bt_mesh_prov_init' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/provisioner.c:709:0: style: The function 'bt_mesh_prov_remote_pub_key_set' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/mesh.c:126:0: style: The function 'bt_mesh_provision_adv' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/proxy_srv.c:907:0: style: The function 'bt_mesh_proxy_adv_start' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/proxy_srv.c:982:0: style: The function 'bt_mesh_proxy_init' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/mesh.c:274:0: style: The function 'bt_mesh_resume' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/rpl.c:328:0: style: The function 'bt_mesh_rpl_pending_store' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/subnet.c:844:0: style: The function 'bt_mesh_subnet_pending_store' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/mesh.c:231:0: style: The function 'bt_mesh_suspend' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/transport.c:1922:0: style: The function 'bt_mesh_va_pending_store' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/testing.c:31:0: style: The function 'bt_test_cb_unregister' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/testing.c:95:0: style: The function 'bt_test_mesh_lpn_group_add' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/testing.c:102:0: style: The function 'bt_test_mesh_lpn_group_remove' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/testing.c:109:0: style: The function 'bt_test_mesh_rpl_clear' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/testing.c:116:0: style: The function 'bt_test_print_credentials' is never used. [unusedFunction]
+
+^
+apps/btshell/src/main.c:2449:0: style: The function 'btshell_l2cap_reconfig' is never used. [unusedFunction]
+
+^
+apps/btshell/src/main.c:1974:0: style: The function 'btshell_sec_unpair' is never used. [unusedFunction]
+
+^
+babblesim/core/src/argparse.c:29:0: style: The function 'cmd_gdev_nbr_found' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:154:0: style: The function 'cmd_l2cap_connect' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:96:0: style: The function 'cmd_l2cap_create_server' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:199:0: style: The function 'cmd_l2cap_disconnect' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:288:0: style: The function 'cmd_l2cap_reconfig' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:230:0: style: The function 'cmd_l2cap_send' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:264:0: style: The function 'cmd_l2cap_show_coc' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd_l2cap.c:37:0: style: The function 'cmd_l2cap_update' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd.c:1871:0: style: The function 'cmd_set_adv_data' is never used. [unusedFunction]
+
+^
+apps/btshell/src/cmd.c:1877:0: style: The function 'cmd_set_scan_rsp' is never used. [unusedFunction]
+
+^
+babblesim/core/src/argparse.c:24:0: style: The function 'cmd_trace_lvl_found' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:455:0: style: The function 'double_jacobian_default' is never used. [unusedFunction]
+
+^
+babblesim/edtt/hci_transport/src/edtt_driver_bsim.c:64:0: style: The function 'edtt_stop' is never used. [unusedFunction]
+
+^
+porting/nimble/src/endian.c:224:0: style: The function 'get_be64' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:59:0: style: The function 'hal_bsp_core_dump' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:158:0: style: The function 'hal_bsp_deinit' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:48:0: style: The function 'hal_bsp_flash_dev' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:81:0: style: The function 'hal_bsp_get_nvic_priority' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_hw_id.c:49:0: style: The function 'hal_bsp_hw_id' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_hw_id.c:35:0: style: The function 'hal_bsp_hw_id_len' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:138:0: style: The function 'hal_bsp_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/hal_bsp.c:66:0: style: The function 'hal_bsp_power_state' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_hw_id.c:66:0: style: The function 'hal_bsp_set_hw_id' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_system.c:61:0: style: The function 'hal_debugger_connected' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_reset_cause.c:24:0: style: The function 'hal_reset_cause' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_system.c:39:0: style: The function 'hal_system_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_system.c:47:0: style: The function 'hal_system_reset' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:695:0: style: The function 'hal_timer_deinit' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:799:0: style: The function 'hal_timer_delay' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:740:0: style: The function 'hal_timer_get_resolution' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_timer.c:841:0: style: The function 'hal_timer_start' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:359:0: style: The function 'hal_uart_blocking_tx' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:434:0: style: The function 'hal_uart_close' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:401:0: style: The function 'hal_uart_config' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:459:0: style: The function 'hal_uart_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:370:0: style: The function 'hal_uart_init_cbs' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:353:0: style: The function 'hal_uart_start_rx' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:334:0: style: The function 'hal_uart_start_tx' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_watchdog.c:29:0: style: The function 'hal_watchdog_enable' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_watchdog.c:23:0: style: The function 'hal_watchdog_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_watchdog.c:34:0: style: The function 'hal_watchdog_tickle' is never used. [unusedFunction]
+
+^
+nimble/transport/dialog_cmac/src/hci_cmac.c:40:0: style: The function 'hci_cmac_acl_tx' is never used. [unusedFunction]
+
+^
+nimble/transport/nrf5340/src/nrf5340_ble_hci.c:198:0: style: The function 'hci_ipc_atomic_get' is never used. [unusedFunction]
+
+^
+nimble/transport/nrf5340/src/nrf5340_ble_hci.c:220:0: style: The function 'hci_ipc_atomic_put' is never used. [unusedFunction]
+
+^
+nimble/transport/common/hci_ipc/src/hci_ipc.c:218:0: style: The function 'hci_ipc_init' is never used. [unusedFunction]
+
+^
+porting/npl/riot/src/nrf5x_isr.c:27:0: style: The function 'isr_radio' is never used. [unusedFunction]
+
+^
+porting/npl/riot/src/nrf5x_isr.c:33:0: style: The function 'isr_rng' is never used. [unusedFunction]
+
+^
+porting/npl/riot/src/nrf5x_isr.c:39:0: style: The function 'isr_rtc0' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:382:0: style: The function 'k_fifo_is_empty' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:533:0: style: The function 'k_sleep' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:522:0: style: The function 'k_uptime_delta' is never used. [unusedFunction]
+
+^
+porting/nimble/src/mem.c:207:0: style: The function 'mem_init_mbuf_pool' is never used. [unusedFunction]
+
+^
+porting/nimble/src/mem.c:193:0: style: The function 'mem_malloc_mbufpkt_pool' is never used. [unusedFunction]
+
+^
+porting/nimble/src/mem.c:103:0: style: The function 'mem_malloc_mempool_ext' is never used. [unusedFunction]
+
+^
+porting/nimble/src/mem.c:316:0: style: The function 'mem_pullup_obj' is never used. [unusedFunction]
+
+^
+porting/nimble/src/mem.c:268:0: style: The function 'mem_split_frag' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:340:0: style: The function 'net_buf_add_zeros' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:387:0: style: The function 'net_buf_get' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:121:0: style: The function 'net_buf_simple_clone' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:159:0: style: The function 'net_buf_simple_pull_le24' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:399:0: style: The function 'net_buf_simple_push' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:276:0: style: The function 'net_buf_simple_push_le16' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:860:0: style: The function 'net_buf_slist_is_empty' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:932:0: style: The function 'net_buf_slist_merge_slist' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:878:0: style: The function 'net_buf_slist_peek_next' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/glue.c:917:0: style: The function 'net_buf_slist_remove' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/nimble_port_freertos.c:31:0: style: The function 'nimble_port_freertos_init' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:268:0: style: The function 'npl_freertos_callout_init' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:302:0: style: The function 'npl_freertos_callout_remaining_ticks' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:278:0: style: The function 'npl_freertos_callout_reset' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:33:0: style: The function 'npl_freertos_eventq_get' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:56:0: style: The function 'npl_freertos_eventq_put' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:78:0: style: The function 'npl_freertos_eventq_remove' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:140:0: style: The function 'npl_freertos_mutex_init' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:153:0: style: The function 'npl_freertos_mutex_pend' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:174:0: style: The function 'npl_freertos_mutex_release' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:194:0: style: The function 'npl_freertos_sem_init' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:207:0: style: The function 'npl_freertos_sem_pend' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:230:0: style: The function 'npl_freertos_sem_release' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:320:0: style: The function 'npl_freertos_time_ms_to_ticks' is never used. [unusedFunction]
+
+^
+porting/npl/freertos/src/npl_os_freertos.c:335:0: style: The function 'npl_freertos_time_ticks_to_ms' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:111:0: style: The function 'nrf21540_init' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/nrf21540/src/nrf21540.c:36:0: style: The function 'nrf21540_mode_set' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/nrf52_clock.c:82:0: style: The function 'nrf52_clock_hfxo_release' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/nrf52_clock.c:37:0: style: The function 'nrf52_clock_hfxo_request' is never used. [unusedFunction]
+
+^
+nimble/transport/nrf5340/src/nrf5340_ble_hci.c:40:0: style: The function 'nrf5340_ble_hci_acl_tx' is never used. [unusedFunction]
+
+^
+nimble/transport/nrf5340/src/nrf5340_ble_hci.c:110:0: style: The function 'nrf5340_ble_hci_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:106:0: style: The function 'os_arch_ctx_sw' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:157:0: style: The function 'os_arch_in_critical' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:94:0: style: The function 'os_arch_os_init' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:74:0: style: The function 'os_arch_os_start' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:147:0: style: The function 'os_arch_restore_sr' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:141:0: style: The function 'os_arch_save_sr' is never used. [unusedFunction]
+
+^
+babblesim/hw/bsp/nrf52_bsim/src/arch/bsim_arch/os_arch.c:54:0: style: The function 'os_arch_task_stack_init' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:62:0: style: The function 'os_cputime_delay_nsecs' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:72:0: style: The function 'os_cputime_delay_usecs' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime_pwr2.c:78:0: style: The function 'os_cputime_ticks_to_usecs' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:81:0: style: The function 'os_cputime_timer_init' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:99:0: style: The function 'os_cputime_timer_relative' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:90:0: style: The function 'os_cputime_timer_start' is never used. [unusedFunction]
+
+^
+porting/nimble/src/os_cputime.c:113:0: style: The function 'os_cputime_timer_stop' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_os_tick.c:155:0: style: The function 'os_tick_idle' is never used. [unusedFunction]
+
+^
+apps/btshell/src/parse.c:470:0: style: The function 'parse_arg_uint8_list_with_separator' is never used. [unusedFunction]
+
+^
+nimble/drivers/nrf5x/src/nrf52/phy.c:160:0: style: The function 'phy_ppi_init' is never used. [unusedFunction]
+
+^
+nimble/drivers/nrf5x/src/nrf52/phy.c:189:0: style: The function 'phy_txpower_round' is never used. [unusedFunction]
+
+^
+nimble/drivers/nrf5x/src/nrf52/phy.c:183:0: style: The function 'phy_txpower_set' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:96:0: style: The function 'posix_get_hw_cycle' is never used. [unusedFunction]
+
+^
+babblesim/core/src/irq_handler.c:63:0: style: The function 'posix_irq_handler_im_from_sw' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/proxy_srv.c:629:0: style: The function 'proxy_ccc_write' is never used. [unusedFunction]
+
+^
+nimble/host/mesh/src/proxy_srv.c:323:0: style: The function 'proxy_send_beacons' is never used. [unusedFunction]
+
+^
+porting/nimble/src/endian.c:154:0: style: The function 'put_be32' is never used. [unusedFunction]
+
+^
+porting/nimble/src/endian.c:166:0: style: The function 'put_be64' is never used. [unusedFunction]
+
+^
+porting/nimble/src/endian.c:33:0: style: The function 'put_le24' is never used. [unusedFunction]
+
+^
+apps/blestress/src/misc.c:23:0: style: The function 'rand_bytes' is never used. [unusedFunction]
+
+^
+apps/blestress/src/rx_stress.c:1478:0: style: The function 'rx_stress_start_auto' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/sky66112/src/sky66112.c:165:0: style: The function 'sky66112_init' is never used. [unusedFunction]
+
+^
+nimble/drivers/fem/sky66403/src/sky66403.c:165:0: style: The function 'sky66403_init' is never used. [unusedFunction]
+
+^
+apps/blestress/src/stress.c:371:0: style: The function 'stress_find_svc_handle' is never used. [unusedFunction]
+
+^
+apps/btshell/src/misc.c:77:0: style: The function 'svc_is_empty' is never used. [unusedFunction]
+
+^
+porting/nimble/src/endian.c:261:0: style: The function 'swap_buf' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/aes_decrypt.c:62:0: style: The function 'tc_aes128_set_decrypt_key' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/cbc_mode.c:77:0: style: The function 'tc_cbc_mode_decrypt' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/cbc_mode.c:37:0: style: The function 'tc_cbc_mode_encrypt' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ccm_mode.c:39:0: style: The function 'tc_ccm_config' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ccm_mode.c:198:0: style: The function 'tc_ccm_decryption_verification' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ccm_mode.c:137:0: style: The function 'tc_ccm_generation_encryption' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ctr_mode.c:37:0: style: The function 'tc_ctr_mode' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ctr_prng.c:205:0: style: The function 'tc_ctr_prng_generate' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ctr_prng.c:117:0: style: The function 'tc_ctr_prng_init' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ctr_prng.c:164:0: style: The function 'tc_ctr_prng_reseed' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ctr_prng.c:272:0: style: The function 'tc_ctr_prng_uninstantiate' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/hmac_prng.c:177:0: style: The function 'tc_hmac_prng_generate' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/hmac_prng.c:112:0: style: The function 'tc_hmac_prng_init' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/hmac_prng.c:138:0: style: The function 'tc_hmac_prng_reseed' is never used. [unusedFunction]
+
+^
+porting/npl/linux/test/test_npl_eventq.c:88:0: style: The function 'test_get_no_wait' is never used. [unusedFunction]
+
+^
+porting/npl/linux/test/test_npl_callout.c:80:0: style: The function 'test_stop' is never used. [unusedFunction]
+
+^
+apps/bttester/src/bttester.c:364:0: style: The function 'tester_send_buf' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:219:0: style: The function 'tm_abs_time_to_hw_time' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:204:0: style: The function 'tm_get_next_timer_abstime' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:210:0: style: The function 'tm_hw_time_to_abs_time' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:128:0: style: The function 'tm_reset_hw_times' is never used. [unusedFunction]
+
+^
+babblesim/core/src/time_machine.c:164:0: style: The function 'tm_update_last_phy_sync_time' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:908:0: style: The function 'uECC_compute_public_key' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:77:0: style: The function 'uECC_curve_private_key_size' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:82:0: style: The function 'uECC_curve_public_key_size' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc_dh.c:102:0: style: The function 'uECC_make_key' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc_dh.c:68:0: style: The function 'uECC_make_key_with_d' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:516:0: style: The function 'uECC_secp256r1' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:67:0: style: The function 'uECC_set_rng' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc_dsa.c:161:0: style: The function 'uECC_sign' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc_dsa.c:192:0: style: The function 'uECC_verify' is never used. [unusedFunction]
+
+^
+babblesim/hw/mcu/nordic/nrf52_bsim/src/hal_uart.c:465:0: style: The function 'uart_set_dev' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:521:0: style: The function 'vli_mmod_fast_secp256r1' is never used. [unusedFunction]
+
+^
+ext/tinycrypt/src/ecc.c:502:0: style: The function 'x_side_default' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
